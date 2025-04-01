@@ -117,75 +117,76 @@ $(document).ready(function(){initNavTree('AlignWithReef_8h_source.html',''); ini
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &lt;units/velocity.h&gt;</span></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &lt;units/acceleration.h&gt;</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="AlignWithReef_8h.html#af0972e1166010355821378b4aad9550d">   19</a></span> <span class="keyword">enum</span> <a class="code hl_enumeration" href="AlignWithReef_8h.html#af0972e1166010355821378b4aad9550d">ReefSide</a> {</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="AlignWithReef_8h.html#af0972e1166010355821378b4aad9550da9d4d8b0b72fc2659da772d761a3c5ecb">   20</a></span>    <a class="code hl_enumvalue" href="AlignWithReef_8h.html#af0972e1166010355821378b4aad9550da9d4d8b0b72fc2659da772d761a3c5ecb">Left</a>,</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <a class="code hl_enumvalue" href="AlignWithReef_8h.html#af0972e1166010355821378b4aad9550dad48f7af8c070184f3774c8e85854eb66">Right</a></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="AlignWithReef_8h.html#af0972e1166010355821378b4aad9550dad48f7af8c070184f3774c8e85854eb66">   22</a></span>};</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="classAlignWithReef.html">   24</a></span><span class="keyword">class </span><a class="code hl_class" href="classAlignWithReef.html">AlignWithReef</a></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    : <span class="keyword">public</span> frc2::CommandHelper&lt;frc2::Command, AlignWithReef&gt; {</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keyword">explicit</span> <a class="code hl_class" href="classAlignWithReef.html">AlignWithReef</a>(<a class="code hl_class" href="classCameraSubsystem.html">CameraSubsystem</a>* camera, <a class="code hl_class" href="classsubsystems_1_1CommandSwerveDrivetrain.html">subsystems::CommandSwerveDrivetrain</a>* drivetrain, <a class="code hl_enumeration" href="AlignWithReef_8h.html#af0972e1166010355821378b4aad9550d">ReefSide</a> reefSide);</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classAlignWithReef.html#ab13c0e69be489c0d9f5b1a2c6d6518a3">Initialize</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classAlignWithReef.html#af74f27716a11636b296191db5f8a87b4">Execute</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classAlignWithReef.html#a7cead21b7e387ac208d1496f68cfabc8">IsFinished</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="classAlignWithReef.html#a698827d1d3c015bf78b59f718ee48ac7">   38</a></span>    swerve::requests::RobotCentric <a class="code hl_variable" href="classAlignWithReef.html#a698827d1d3c015bf78b59f718ee48ac7">robotOriented</a> = swerve::requests::RobotCentric{}</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        .WithDriveRequestType(swerve::DriveRequestType::OpenLoopVoltage);</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <a class="code hl_class" href="classCameraSubsystem.html">CameraSubsystem</a>* m_camera;</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <a class="code hl_class" href="classsubsystems_1_1CommandSwerveDrivetrain.html">subsystems::CommandSwerveDrivetrain</a>* m_drivetrain;</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    std::optional&lt;int&gt; m_targetTagId;</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    units::degree_t m_targetDegrees;</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">double</span> kP = 2.0;</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">double</span> kI = 0.0;</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">double</span> kD = 0.0;</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    frc::PIDController m_XAlignmentPID {kP, kI, kD};</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    frc::PIDController m_YAlignmentPID {kP, kI, kD};</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">double</span> kRotationP = 0.05;</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">double</span> kRotationI = 0.0;</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">double</span> kRotationD = 0.0;</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    frc::PIDController m_rotationalPID {kRotationP, kRotationI, kRotationD};</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> units::meters_per_second_t kMaxVelocity = 1.75_mps;</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> units::radians_per_second_t kMaxAngularVelocity = 1_rad_per_s;</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="keyword">const</span> units::meter_t kForwardTolerance = units::meter_t(3_in);</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keyword">const</span> units::meter_t kStrafeTolerance = units::meter_t(0.5_in);</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keyword">const</span> units::degree_t kRotationTolerance = 2_deg;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="AlignWithReef_8h.html#af0972e1166010355821378b4aad9550d">   22</a></span><span class="keyword">enum</span> <a class="code hl_enumeration" href="AlignWithReef_8h.html#af0972e1166010355821378b4aad9550d">ReefSide</a> {</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="AlignWithReef_8h.html#af0972e1166010355821378b4aad9550da9d4d8b0b72fc2659da772d761a3c5ecb">   23</a></span>    <a class="code hl_enumvalue" href="AlignWithReef_8h.html#af0972e1166010355821378b4aad9550da9d4d8b0b72fc2659da772d761a3c5ecb">Left</a>,</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <a class="code hl_enumvalue" href="AlignWithReef_8h.html#af0972e1166010355821378b4aad9550dad48f7af8c070184f3774c8e85854eb66">Right</a></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="AlignWithReef_8h.html#af0972e1166010355821378b4aad9550dad48f7af8c070184f3774c8e85854eb66">   25</a></span>};</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="classAlignWithReef.html">   30</a></span><span class="keyword">class </span><a class="code hl_class" href="classAlignWithReef.html">AlignWithReef</a></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    : <span class="keyword">public</span> frc2::CommandHelper&lt;frc2::Command, AlignWithReef&gt; {</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keyword">explicit</span> <a class="code hl_class" href="classAlignWithReef.html">AlignWithReef</a>(<a class="code hl_class" href="classCameraSubsystem.html">CameraSubsystem</a>* camera, <a class="code hl_class" href="classsubsystems_1_1CommandSwerveDrivetrain.html">subsystems::CommandSwerveDrivetrain</a>* drivetrain, <a class="code hl_enumeration" href="AlignWithReef_8h.html#af0972e1166010355821378b4aad9550d">ReefSide</a> reefSide);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classAlignWithReef.html#ab13c0e69be489c0d9f5b1a2c6d6518a3">Initialize</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classAlignWithReef.html#af74f27716a11636b296191db5f8a87b4">Execute</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classAlignWithReef.html#a7cead21b7e387ac208d1496f68cfabc8">IsFinished</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="classAlignWithReef.html#a698827d1d3c015bf78b59f718ee48ac7">   57</a></span>    swerve::requests::RobotCentric <a class="code hl_variable" href="classAlignWithReef.html#a698827d1d3c015bf78b59f718ee48ac7">robotOriented</a> = swerve::requests::RobotCentric{}</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        .WithDriveRequestType(swerve::DriveRequestType::OpenLoopVoltage);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <a class="code hl_class" href="classCameraSubsystem.html">CameraSubsystem</a>* m_camera;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <a class="code hl_class" href="classsubsystems_1_1CommandSwerveDrivetrain.html">subsystems::CommandSwerveDrivetrain</a>* m_drivetrain;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    std::optional&lt;int&gt; m_targetTagId;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    units::degree_t m_targetDegrees;</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keyword">const</span> units::meter_t kDistanceFromReefSetpoint = units::meter_t(30_in);</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="keyword">const</span> units::meter_t kStrafeLeftReefSetpoint = units::meter_t(-1_in);</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keyword">const</span> units::meter_t kStrafeRightReefSetpoint = units::meter_t(kStrafeLeftReefSetpoint + 13_in);</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    units::meter_t m_strafeSetpoint = kStrafeLeftReefSetpoint;</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="keyword">const</span> std::map&lt;int, units::degree_t&gt; kTagAngleMap = {</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        {6, 120_deg},</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        {7, 180_deg},</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        {8, 240_deg},</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        {9, 300_deg},</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        {10, 0_deg},</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        {11, 60_deg},</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        {17, 60_deg},</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        {18, 0_deg},</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        {19, 300_deg},</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        {20, 240_deg},</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        {21, 180_deg},</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        {22, 120_deg},</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    };</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>};</div>
-<div class="ttc" id="aAlignWithReef_8h_html_af0972e1166010355821378b4aad9550d"><div class="ttname"><a href="AlignWithReef_8h.html#af0972e1166010355821378b4aad9550d">ReefSide</a></div><div class="ttdeci">ReefSide</div><div class="ttdef"><b>Definition:</b> AlignWithReef.h:19</div></div>
-<div class="ttc" id="aAlignWithReef_8h_html_af0972e1166010355821378b4aad9550da9d4d8b0b72fc2659da772d761a3c5ecb"><div class="ttname"><a href="AlignWithReef_8h.html#af0972e1166010355821378b4aad9550da9d4d8b0b72fc2659da772d761a3c5ecb">Left</a></div><div class="ttdeci">@ Left</div><div class="ttdef"><b>Definition:</b> AlignWithReef.h:20</div></div>
-<div class="ttc" id="aAlignWithReef_8h_html_af0972e1166010355821378b4aad9550dad48f7af8c070184f3774c8e85854eb66"><div class="ttname"><a href="AlignWithReef_8h.html#af0972e1166010355821378b4aad9550dad48f7af8c070184f3774c8e85854eb66">Right</a></div><div class="ttdeci">@ Right</div><div class="ttdef"><b>Definition:</b> AlignWithReef.h:21</div></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">double</span> kP = 2.0;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">double</span> kI = 0.0;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">double</span> kD = 0.0;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    frc::PIDController m_XAlignmentPID {kP, kI, kD};</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    frc::PIDController m_YAlignmentPID {kP, kI, kD};</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">double</span> kRotationP = 0.05;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">double</span> kRotationI = 0.0;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">double</span> kRotationD = 0.0;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    frc::PIDController m_rotationalPID {kRotationP, kRotationI, kRotationD};</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> units::meters_per_second_t kMaxVelocity = 1.75_mps;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> units::radians_per_second_t kMaxAngularVelocity = 1_rad_per_s;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="keyword">const</span> units::meter_t kForwardTolerance = units::meter_t(3_in);</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="keyword">const</span> units::meter_t kStrafeTolerance = units::meter_t(0.5_in);</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <span class="keyword">const</span> units::degree_t kRotationTolerance = 2_deg;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <span class="keyword">const</span> units::meter_t kDistanceFromReefSetpoint = units::meter_t(30_in);</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <span class="keyword">const</span> units::meter_t kStrafeLeftReefSetpoint = units::meter_t(-1_in);</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    <span class="keyword">const</span> units::meter_t kStrafeRightReefSetpoint = units::meter_t(kStrafeLeftReefSetpoint + 13_in);</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    units::meter_t m_strafeSetpoint = kStrafeLeftReefSetpoint;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <span class="keyword">const</span> std::map&lt;int, units::degree_t&gt; kTagAngleMap = {</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        {6, 120_deg},</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        {7, 180_deg},</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        {8, 240_deg},</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        {9, 300_deg},</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        {10, 0_deg},</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        {11, 60_deg},</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        {17, 60_deg},</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        {18, 0_deg},</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        {19, 300_deg},</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        {20, 240_deg},</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        {21, 180_deg},</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        {22, 120_deg},</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    };</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>};</div>
+<div class="ttc" id="aAlignWithReef_8h_html_af0972e1166010355821378b4aad9550d"><div class="ttname"><a href="AlignWithReef_8h.html#af0972e1166010355821378b4aad9550d">ReefSide</a></div><div class="ttdeci">ReefSide</div><div class="ttdoc">An enum representing the two sides of the reef, left or right.</div><div class="ttdef"><b>Definition:</b> AlignWithReef.h:22</div></div>
+<div class="ttc" id="aAlignWithReef_8h_html_af0972e1166010355821378b4aad9550da9d4d8b0b72fc2659da772d761a3c5ecb"><div class="ttname"><a href="AlignWithReef_8h.html#af0972e1166010355821378b4aad9550da9d4d8b0b72fc2659da772d761a3c5ecb">Left</a></div><div class="ttdeci">@ Left</div><div class="ttdef"><b>Definition:</b> AlignWithReef.h:23</div></div>
+<div class="ttc" id="aAlignWithReef_8h_html_af0972e1166010355821378b4aad9550dad48f7af8c070184f3774c8e85854eb66"><div class="ttname"><a href="AlignWithReef_8h.html#af0972e1166010355821378b4aad9550dad48f7af8c070184f3774c8e85854eb66">Right</a></div><div class="ttdeci">@ Right</div><div class="ttdef"><b>Definition:</b> AlignWithReef.h:24</div></div>
 <div class="ttc" id="aCameraSubsystem_8h_html"><div class="ttname"><a href="CameraSubsystem_8h.html">CameraSubsystem.h</a></div></div>
 <div class="ttc" id="aCommandSwerveDrivetrain_8h_html"><div class="ttname"><a href="CommandSwerveDrivetrain_8h.html">CommandSwerveDrivetrain.h</a></div></div>
-<div class="ttc" id="aclassAlignWithReef_html"><div class="ttname"><a href="classAlignWithReef.html">AlignWithReef</a></div><div class="ttdef"><b>Definition:</b> AlignWithReef.h:25</div></div>
-<div class="ttc" id="aclassAlignWithReef_html_a698827d1d3c015bf78b59f718ee48ac7"><div class="ttname"><a href="classAlignWithReef.html#a698827d1d3c015bf78b59f718ee48ac7">AlignWithReef::robotOriented</a></div><div class="ttdeci">swerve::requests::RobotCentric robotOriented</div><div class="ttdef"><b>Definition:</b> AlignWithReef.h:38</div></div>
+<div class="ttc" id="aclassAlignWithReef_html"><div class="ttname"><a href="classAlignWithReef.html">AlignWithReef</a></div><div class="ttdoc">A class to align the robot to the best april tag found by the camera.</div><div class="ttdef"><b>Definition:</b> AlignWithReef.h:31</div></div>
+<div class="ttc" id="aclassAlignWithReef_html_a698827d1d3c015bf78b59f718ee48ac7"><div class="ttname"><a href="classAlignWithReef.html#a698827d1d3c015bf78b59f718ee48ac7">AlignWithReef::robotOriented</a></div><div class="ttdeci">swerve::requests::RobotCentric robotOriented</div><div class="ttdef"><b>Definition:</b> AlignWithReef.h:57</div></div>
 <div class="ttc" id="aclassAlignWithReef_html_a7cead21b7e387ac208d1496f68cfabc8"><div class="ttname"><a href="classAlignWithReef.html#a7cead21b7e387ac208d1496f68cfabc8">AlignWithReef::IsFinished</a></div><div class="ttdeci">bool IsFinished() override</div><div class="ttdef"><b>Definition:</b> AlignWithReef.cpp:71</div></div>
 <div class="ttc" id="aclassAlignWithReef_html_ab13c0e69be489c0d9f5b1a2c6d6518a3"><div class="ttname"><a href="classAlignWithReef.html#ab13c0e69be489c0d9f5b1a2c6d6518a3">AlignWithReef::Initialize</a></div><div class="ttdeci">void Initialize() override</div><div class="ttdef"><b>Definition:</b> AlignWithReef.cpp:25</div></div>
 <div class="ttc" id="aclassAlignWithReef_html_af74f27716a11636b296191db5f8a87b4"><div class="ttname"><a href="classAlignWithReef.html#af74f27716a11636b296191db5f8a87b4">AlignWithReef::Execute</a></div><div class="ttdeci">void Execute() override</div><div class="ttdef"><b>Definition:</b> AlignWithReef.cpp:36</div></div>

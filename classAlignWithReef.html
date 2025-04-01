@@ -104,6 +104,9 @@ $(document).ready(function(){initNavTree('classAlignWithReef.html',''); initResi
 </div><!--header-->
 <div class="contents">
 
+<p>A class to align the robot to the best april tag found by the camera.  
+ <a href="classAlignWithReef.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="AlignWithReef_8h_source.html">AlignWithReef.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for AlignWithReef:</div>
@@ -115,6 +118,7 @@ Inheritance diagram for AlignWithReef:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aff4a5a15b8efb332454c71d6b9a0f78d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAlignWithReef.html#aff4a5a15b8efb332454c71d6b9a0f78d">AlignWithReef</a> (<a class="el" href="classCameraSubsystem.html">CameraSubsystem</a> *camera, <a class="el" href="classsubsystems_1_1CommandSwerveDrivetrain.html">subsystems::CommandSwerveDrivetrain</a> *drivetrain, <a class="el" href="AlignWithReef_8h.html#af0972e1166010355821378b4aad9550d">ReefSide</a> reefSide)</td></tr>
+<tr class="memdesc:aff4a5a15b8efb332454c71d6b9a0f78d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constructor that takes in a pointer to the camera and drive subsystems and the side of the reef to align to.  <br /></td></tr>
 <tr class="separator:aff4a5a15b8efb332454c71d6b9a0f78d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab13c0e69be489c0d9f5b1a2c6d6518a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAlignWithReef.html#ab13c0e69be489c0d9f5b1a2c6d6518a3">Initialize</a> () override</td></tr>
 <tr class="separator:ab13c0e69be489c0d9f5b1a2c6d6518a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -128,7 +132,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a698827d1d3c015bf78b59f718ee48ac7"><td class="memItemLeft" align="right" valign="top">swerve::requests::RobotCentric&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAlignWithReef.html#a698827d1d3c015bf78b59f718ee48ac7">robotOriented</a></td></tr>
 <tr class="separator:a698827d1d3c015bf78b59f718ee48ac7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A class to align the robot to the best april tag found by the camera. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aff4a5a15b8efb332454c71d6b9a0f78d" name="aff4a5a15b8efb332454c71d6b9a0f78d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aff4a5a15b8efb332454c71d6b9a0f78d">&#9670;&#160;</a></span>AlignWithReef()</h2>
 
@@ -168,11 +174,13 @@ Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Creates a new ExampleCommand.</p>
+
+<p>The constructor that takes in a pointer to the camera and drive subsystems and the side of the reef to align to. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">camera</td><td>The subsystem used by this command. </td></tr>
-    <tr><td class="paramname">drivetrain</td><td></td></tr>
+    <tr><td class="paramname">camera</td><td>The camera subsystem. </td></tr>
+    <tr><td class="paramname">drivetrain</td><td>The drivetrain. </td></tr>
+    <tr><td class="paramname">reefSide</td><td>The side of the reef to align to. </td></tr>
   </table>
   </dd>
 </dl>
@@ -202,6 +210,7 @@ Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Runs until IsFinished returns true. Doesn't run at all if no april tags are present. </p>
 
 </div>
 </div>
@@ -252,6 +261,7 @@ Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Stops the command when there are no april tags present or when the robot is within the forward, strafe, and rotation tolerances. </p>
 
 </div>
 </div>
@@ -269,7 +279,8 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= swerve::requests::RobotCentric{}</div>
 <div class="line">        .WithDriveRequestType(swerve::DriveRequestType::OpenLoopVoltage)</div>
-</div><!-- fragment -->
+</div><!-- fragment --><p>This swerve request ensures the robot only moves in a robot oriented fashion, where X is forward and Y is side to side. </p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
