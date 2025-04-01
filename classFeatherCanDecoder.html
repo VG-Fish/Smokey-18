@@ -98,11 +98,13 @@ $(document).ready(function(){initNavTree('classFeatherCanDecoder.html',''); init
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="classFeatherCanDecoder-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">FeatherCanDecoder Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>This class is used for parsing sensor values.  
+ <a href="classFeatherCanDecoder.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="FeatherCanDecoder_8h_source.html">FeatherCanDecoder.h</a>&gt;</code></p>
 <div class="dynheader">
@@ -123,37 +125,40 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a925d084a12fd3eaee1857cde0f8a149a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFeatherCanDecoder.html#a925d084a12fd3eaee1857cde0f8a149a">FeatherCanDecoder</a> ()</td></tr>
 <tr class="separator:a925d084a12fd3eaee1857cde0f8a149a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b09a0a86f4a1b6760826c9adc7c828c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFeatherCanDecoder.html#a7b09a0a86f4a1b6760826c9adc7c828c">Update</a> ()</td></tr>
+<tr class="memdesc:a7b09a0a86f4a1b6760826c9adc7c828c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function parses all the CAN messages; this function must be called periodically.  <br /></td></tr>
 <tr class="separator:a7b09a0a86f4a1b6760826c9adc7c828c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8cbbd5047d1a0eb20fe473f55b2e144"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFeatherCanDecoder.html#ac8cbbd5047d1a0eb20fe473f55b2e144">GetCoralIntakeAngleDegrees</a> () override</td></tr>
+<tr class="memdesc:ac8cbbd5047d1a0eb20fe473f55b2e144"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the transformed <b>absolute</b> angle of the coral arm.  <br /></td></tr>
 <tr class="separator:ac8cbbd5047d1a0eb20fe473f55b2e144"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac4834d4ca16e2aef9ba0c1b799501386"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFeatherCanDecoder.html#ac4834d4ca16e2aef9ba0c1b799501386">GetCoralIntakeRawAngleDegrees</a> () override</td></tr>
+<tr class="memdesc:ac4834d4ca16e2aef9ba0c1b799501386"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the raw <b>absolute</b> angle of the coral arm.  <br /></td></tr>
 <tr class="separator:ac4834d4ca16e2aef9ba0c1b799501386"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8fb3fb6e8998f5cf6105bb4e57ff5382"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFeatherCanDecoder.html#a8fb3fb6e8998f5cf6105bb4e57ff5382">IsCoralAngleValid</a> () override</td></tr>
 <tr class="separator:a8fb3fb6e8998f5cf6105bb4e57ff5382"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74788bd6490dee4f5b70f866910b322e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFeatherCanDecoder.html#a74788bd6490dee4f5b70f866910b322e">IsCoralCollected</a> () override</td></tr>
 <tr class="separator:a74788bd6490dee4f5b70f866910b322e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84a98631aa68625245d7e1739ccd06da"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFeatherCanDecoder.html#a84a98631aa68625245d7e1739ccd06da">GetAlgaeAngleDegrees</a> () override</td></tr>
+<tr class="memdesc:a84a98631aa68625245d7e1739ccd06da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the transformed <b>absolute</b> angle of the algae arm.  <br /></td></tr>
 <tr class="separator:a84a98631aa68625245d7e1739ccd06da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8b93a7b253baeaf3f499ccc751e0566"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFeatherCanDecoder.html#af8b93a7b253baeaf3f499ccc751e0566">GetAlgaeRawAngleDegrees</a> () override</td></tr>
+<tr class="memdesc:af8b93a7b253baeaf3f499ccc751e0566"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the raw <b>absolute</b> angle of the algae arm.  <br /></td></tr>
 <tr class="separator:af8b93a7b253baeaf3f499ccc751e0566"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aefa3253c6eef6fc1bb097d62e000c670"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFeatherCanDecoder.html#aefa3253c6eef6fc1bb097d62e000c670">IsAlgaeCollected</a> () override</td></tr>
 <tr class="separator:aefa3253c6eef6fc1bb097d62e000c670"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae96caa0d6114a6935f4a6252a096ecb0"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFeatherCanDecoder.html#ae96caa0d6114a6935f4a6252a096ecb0">GetClimberAngleDegrees</a> () override</td></tr>
+<tr class="memdesc:ae96caa0d6114a6935f4a6252a096ecb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the transformed <b>absolute</b> angle of the climber mechanism.  <br /></td></tr>
 <tr class="separator:ae96caa0d6114a6935f4a6252a096ecb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac2fc93cbd813ff41bbeae01f20dd18a"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFeatherCanDecoder.html#aac2fc93cbd813ff41bbeae01f20dd18a">GetClimberRawAngleDegrees</a> () override</td></tr>
+<tr class="memdesc:aac2fc93cbd813ff41bbeae01f20dd18a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the raw <b>absolute</b> angle of the climber mechanism.  <br /></td></tr>
 <tr class="separator:aac2fc93cbd813ff41bbeae01f20dd18a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37e8d55ef0c8520832f43b60122acb8e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFeatherCanDecoder.html#a37e8d55ef0c8520832f43b60122acb8e">IsLeftCageHooked</a> () override</td></tr>
 <tr class="separator:a37e8d55ef0c8520832f43b60122acb8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6202b706df08135ff5a3a8592a1c35d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFeatherCanDecoder.html#ab6202b706df08135ff5a3a8592a1c35d">IsRightCageHooked</a> () override</td></tr>
 <tr class="separator:ab6202b706df08135ff5a3a8592a1c35d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3014636e549dcbd1aa3375589144d949"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFeatherCanDecoder.html#a3014636e549dcbd1aa3375589144d949">UnpackClimberCANData</a> ()</td></tr>
-<tr class="separator:a3014636e549dcbd1aa3375589144d949"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94bcb8ad169900e4fd7c8ecda5c9cc37"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFeatherCanDecoder.html#a94bcb8ad169900e4fd7c8ecda5c9cc37">GetBellyPanLeftDistance</a> () override</td></tr>
 <tr class="separator:a94bcb8ad169900e4fd7c8ecda5c9cc37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee84c1d2b387ce78ed433c579f6468c4"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFeatherCanDecoder.html#aee84c1d2b387ce78ed433c579f6468c4">GetBellyPanRightDistance</a> () override</td></tr>
 <tr class="separator:aee84c1d2b387ce78ed433c579f6468c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a02984c7ec5b9dde1a351f45b8c113eb1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFeatherCanDecoder.html#a02984c7ec5b9dde1a351f45b8c113eb1">UnpackBellyPanCANData</a> ()</td></tr>
-<tr class="separator:a02984c7ec5b9dde1a351f45b8c113eb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac95f3ad61696bec0fd3ebf2307a69212"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classICoralIntakeDataProvider.html#ac95f3ad61696bec0fd3ebf2307a69212">GetCoralIntakeAngleDegrees</a> ()=0</td></tr>
 <tr class="separator:ac95f3ad61696bec0fd3ebf2307a69212"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41ab9c055e8c6e88fe73a4a00d5c7ffd"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classICoralIntakeDataProvider.html#a41ab9c055e8c6e88fe73a4a00d5c7ffd">GetCoralIntakeRawAngleDegrees</a> ()=0</td></tr>
@@ -180,53 +185,11 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a56cac7dfa2811f57a7427a92f1755da1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acfdf97fb845ed553c4169e26170a540f"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIAlgaeDataProvider.html#acfdf97fb845ed553c4169e26170a540f">IsAlgaeCollected</a> ()=0</td></tr>
 <tr class="separator:acfdf97fb845ed553c4169e26170a540f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a89dcbb252939e484da175b9804facf17"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFeatherCanDecoder.html#a89dcbb252939e484da175b9804facf17">kCANReadTimeoutMs</a> = 100</td></tr>
-<tr class="separator:a89dcbb252939e484da175b9804facf17"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0c5bf616f10d77384b1710557b73540"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFeatherCanDecoder.html#ad0c5bf616f10d77384b1710557b73540">kCoralDeviceID</a> = 1</td></tr>
-<tr class="separator:ad0c5bf616f10d77384b1710557b73540"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19e9976fe552762181c9210c20073c5d"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFeatherCanDecoder.html#a19e9976fe552762181c9210c20073c5d">kCoralAPIId</a> = 1</td></tr>
-<tr class="separator:a19e9976fe552762181c9210c20073c5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a99a0ec826b5bda4bbc9e2a7f264d2f92"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFeatherCanDecoder.html#a99a0ec826b5bda4bbc9e2a7f264d2f92">kCoralProximityThreshold</a> = 1500</td></tr>
-<tr class="separator:a99a0ec826b5bda4bbc9e2a7f264d2f92"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c2c2a9aca0d31f49f7eade6387978ac"><td class="memItemLeft" align="right" valign="top">const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFeatherCanDecoder.html#a9c2c2a9aca0d31f49f7eade6387978ac">kCoralAngleOffsetDegrees</a> = -258</td></tr>
-<tr class="separator:a9c2c2a9aca0d31f49f7eade6387978ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae48af4ddb528a6d102c8c0f748a5f543"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFeatherCanDecoder.html#ae48af4ddb528a6d102c8c0f748a5f543">kAlgaeDeviceID</a> = 2</td></tr>
-<tr class="separator:ae48af4ddb528a6d102c8c0f748a5f543"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c58c845f3de084c11fe1020f3ae990e"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFeatherCanDecoder.html#a4c58c845f3de084c11fe1020f3ae990e">kAlgaeAPIId</a> = 2</td></tr>
-<tr class="separator:a4c58c845f3de084c11fe1020f3ae990e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6780c9c987d3a575e784ec34262221c5"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFeatherCanDecoder.html#a6780c9c987d3a575e784ec34262221c5">kAlgaeProximityThreshold</a> = 1500</td></tr>
-<tr class="separator:a6780c9c987d3a575e784ec34262221c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b2b175e02186df01bc3e51c9c1c9a18"><td class="memItemLeft" align="right" valign="top">const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFeatherCanDecoder.html#a5b2b175e02186df01bc3e51c9c1c9a18">kAlgaeAngleOffsetDegrees</a> = -237.6</td></tr>
-<tr class="separator:a5b2b175e02186df01bc3e51c9c1c9a18"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0dabc8526e82ae2c30cb78dfa735163"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFeatherCanDecoder.html#ae0dabc8526e82ae2c30cb78dfa735163">kClimberDeviceID</a> = 3</td></tr>
-<tr class="separator:ae0dabc8526e82ae2c30cb78dfa735163"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d45dc5c38b9a60702511920d2ed2e6e"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFeatherCanDecoder.html#a1d45dc5c38b9a60702511920d2ed2e6e">kClimberAPIId</a> = 3</td></tr>
-<tr class="separator:a1d45dc5c38b9a60702511920d2ed2e6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e5767f6e59db03c742f2badb05a39d5"><td class="memItemLeft" align="right" valign="top">const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFeatherCanDecoder.html#a7e5767f6e59db03c742f2badb05a39d5">kClimberAngleOffsetDegrees</a> = -368.5</td></tr>
-<tr class="separator:a7e5767f6e59db03c742f2badb05a39d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee9999f4bbb620bbcb2c61e88bca1144"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFeatherCanDecoder.html#aee9999f4bbb620bbcb2c61e88bca1144">kClimberProximityThreshold</a> = 1500</td></tr>
-<tr class="separator:aee9999f4bbb620bbcb2c61e88bca1144"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5d4be425d8cedf74b81798ed0ae5c9c"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFeatherCanDecoder.html#ae5d4be425d8cedf74b81798ed0ae5c9c">kBellyPanDeviceID</a> = 4</td></tr>
-<tr class="separator:ae5d4be425d8cedf74b81798ed0ae5c9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72e8ca10c8e212b146823f099fd0016f"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFeatherCanDecoder.html#a72e8ca10c8e212b146823f099fd0016f">m_climberAngleDegrees</a></td></tr>
-<tr class="separator:a72e8ca10c8e212b146823f099fd0016f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af776dd2bc4c906033e431ca351b0e160"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFeatherCanDecoder.html#af776dd2bc4c906033e431ca351b0e160">m_rightProximity</a></td></tr>
-<tr class="separator:af776dd2bc4c906033e431ca351b0e160"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af13c5a3eec32c337155c3838f59bb47e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFeatherCanDecoder.html#af13c5a3eec32c337155c3838f59bb47e">m_leftProximity</a></td></tr>
-<tr class="separator:af13c5a3eec32c337155c3838f59bb47e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f4f8a976b733f624a433fe52cdf397b"><td class="memItemLeft" align="right" valign="top">frc::CAN&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFeatherCanDecoder.html#a7f4f8a976b733f624a433fe52cdf397b">m_climberCAN</a></td></tr>
-<tr class="separator:a7f4f8a976b733f624a433fe52cdf397b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a975b27fbdfded252293ffed2f0dc338c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFeatherCanDecoder.html#a975b27fbdfded252293ffed2f0dc338c">m_rightBellyPanDistance</a></td></tr>
-<tr class="separator:a975b27fbdfded252293ffed2f0dc338c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab1ae66b641772f33a293903c95c48874"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFeatherCanDecoder.html#ab1ae66b641772f33a293903c95c48874">m_leftBellyPanDistance</a></td></tr>
-<tr class="separator:ab1ae66b641772f33a293903c95c48874"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c07b7d9a10a9e0cf11ab8e1c0549458"><td class="memItemLeft" align="right" valign="top">frc::CAN&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFeatherCanDecoder.html#a8c07b7d9a10a9e0cf11ab8e1c0549458">m_bellyPanCAN</a></td></tr>
-<tr class="separator:a8c07b7d9a10a9e0cf11ab8e1c0549458"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This class is used for parsing sensor values. </p>
+<p>This class parses CAN messages to extract sensor values (proximity sensors, etc.). The CAN messages are created through custom hardware that integrates multiple sensors and releases their values as CAN messages. A timeout of 100 milliseconds exist, which is used for the Is...Valid() functions. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a925d084a12fd3eaee1857cde0f8a149a" name="a925d084a12fd3eaee1857cde0f8a149a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a925d084a12fd3eaee1857cde0f8a149a">&#9670;&#160;</a></span>FeatherCanDecoder()</h2>
 
@@ -268,6 +231,9 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Gets the transformed <b>absolute</b> angle of the algae arm. </p>
+<p>An offset is applied to "transform" the range of the algae arm. </p>
+
 <p>Implements <a class="el" href="classIAlgaeDataProvider.html#a1de8d218bedefeb1e42ebd035f12fa55">IAlgaeDataProvider</a>.</p>
 
 </div>
@@ -295,6 +261,8 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Gets the raw <b>absolute</b> angle of the algae arm. </p>
+
 <p>Implements <a class="el" href="classIAlgaeDataProvider.html#a56cac7dfa2811f57a7427a92f1755da1">IAlgaeDataProvider</a>.</p>
 
 </div>
@@ -321,6 +289,7 @@ Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo:</a></b></dt><dd>Use this function. </dd></dl>
 
 <p>Implements <a class="el" href="classIBellyPanDataProvider.html#a438d6dd9780ce363d2c821628391498c">IBellyPanDataProvider</a>.</p>
 
@@ -348,6 +317,7 @@ Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000002">Todo:</a></b></dt><dd>Use this function. </dd></dl>
 
 <p>Implements <a class="el" href="classIBellyPanDataProvider.html#a877eba8e05384559a6ccba9e98cd2a94">IBellyPanDataProvider</a>.</p>
 
@@ -376,6 +346,9 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Gets the transformed <b>absolute</b> angle of the climber mechanism. </p>
+<p>An offset is applied to "transform" the range of the climber mechanism. </p>
+
 <p>Implements <a class="el" href="classIClimberDataProvider.html#a60ec633c8c5dffadb902cbe82a0e17c8">IClimberDataProvider</a>.</p>
 
 </div>
@@ -402,6 +375,8 @@ Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Gets the raw <b>absolute</b> angle of the climber mechanism. </p>
 
 <p>Implements <a class="el" href="classIClimberDataProvider.html#a82cf41161ed4435b04d849b3d6e1dabf">IClimberDataProvider</a>.</p>
 
@@ -430,6 +405,9 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Gets the transformed <b>absolute</b> angle of the coral arm. </p>
+<p>An offset is applied to "transform" the range of the coral arm. </p>
+
 <p>Implements <a class="el" href="classICoralIntakeDataProvider.html#ac95f3ad61696bec0fd3ebf2307a69212">ICoralIntakeDataProvider</a>.</p>
 
 </div>
@@ -457,6 +435,8 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Gets the raw <b>absolute</b> angle of the coral arm. </p>
+
 <p>Implements <a class="el" href="classICoralIntakeDataProvider.html#a41ab9c055e8c6e88fe73a4a00d5c7ffd">ICoralIntakeDataProvider</a>.</p>
 
 </div>
@@ -483,6 +463,7 @@ Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Checks whether the value of the proximity sensor is over a tuned threshold. </p>
 
 <p>Implements <a class="el" href="classIAlgaeDataProvider.html#acfdf97fb845ed553c4169e26170a540f">IAlgaeDataProvider</a>.</p>
 
@@ -537,6 +518,7 @@ Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Checks whether the value of the proximity sensor is over a tuned threshold. </p>
 
 <p>Implements <a class="el" href="classICoralIntakeDataProvider.html#a50bca8080b294cf29e3aac2fdef61377">ICoralIntakeDataProvider</a>.</p>
 
@@ -564,6 +546,7 @@ Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Checks whether the value of the proximity sensor is over a tuned threshold for the left side of the cage. </p>
 
 <p>Implements <a class="el" href="classIClimberDataProvider.html#a4966d9a16543f5a4411c3d8719039ad8">IClimberDataProvider</a>.</p>
 
@@ -591,42 +574,9 @@ Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Checks whether the value of the proximity sensor is over a tuned threshold for the right side of the cage. </p>
 
 <p>Implements <a class="el" href="classIClimberDataProvider.html#ac2245439b920e4126e66508d3ff95ded">IClimberDataProvider</a>.</p>
-
-</div>
-</div>
-<a id="a02984c7ec5b9dde1a351f45b8c113eb1" name="a02984c7ec5b9dde1a351f45b8c113eb1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a02984c7ec5b9dde1a351f45b8c113eb1">&#9670;&#160;</a></span>UnpackBellyPanCANData()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void FeatherCanDecoder::UnpackBellyPanCANData </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a3014636e549dcbd1aa3375589144d949" name="a3014636e549dcbd1aa3375589144d949"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3014636e549dcbd1aa3375589144d949">&#9670;&#160;</a></span>UnpackClimberCANData()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void FeatherCanDecoder::UnpackClimberCANData </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
 
 </div>
 </div>
@@ -645,300 +595,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a5b2b175e02186df01bc3e51c9c1c9a18" name="a5b2b175e02186df01bc3e51c9c1c9a18"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5b2b175e02186df01bc3e51c9c1c9a18">&#9670;&#160;</a></span>kAlgaeAngleOffsetDegrees</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const double FeatherCanDecoder::kAlgaeAngleOffsetDegrees = -237.6</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a4c58c845f3de084c11fe1020f3ae990e" name="a4c58c845f3de084c11fe1020f3ae990e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4c58c845f3de084c11fe1020f3ae990e">&#9670;&#160;</a></span>kAlgaeAPIId</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const int FeatherCanDecoder::kAlgaeAPIId = 2</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ae48af4ddb528a6d102c8c0f748a5f543" name="ae48af4ddb528a6d102c8c0f748a5f543"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae48af4ddb528a6d102c8c0f748a5f543">&#9670;&#160;</a></span>kAlgaeDeviceID</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const int FeatherCanDecoder::kAlgaeDeviceID = 2</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a6780c9c987d3a575e784ec34262221c5" name="a6780c9c987d3a575e784ec34262221c5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6780c9c987d3a575e784ec34262221c5">&#9670;&#160;</a></span>kAlgaeProximityThreshold</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const int FeatherCanDecoder::kAlgaeProximityThreshold = 1500</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ae5d4be425d8cedf74b81798ed0ae5c9c" name="ae5d4be425d8cedf74b81798ed0ae5c9c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae5d4be425d8cedf74b81798ed0ae5c9c">&#9670;&#160;</a></span>kBellyPanDeviceID</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const int FeatherCanDecoder::kBellyPanDeviceID = 4</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a89dcbb252939e484da175b9804facf17" name="a89dcbb252939e484da175b9804facf17"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a89dcbb252939e484da175b9804facf17">&#9670;&#160;</a></span>kCANReadTimeoutMs</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const int FeatherCanDecoder::kCANReadTimeoutMs = 100</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a7e5767f6e59db03c742f2badb05a39d5" name="a7e5767f6e59db03c742f2badb05a39d5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7e5767f6e59db03c742f2badb05a39d5">&#9670;&#160;</a></span>kClimberAngleOffsetDegrees</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const double FeatherCanDecoder::kClimberAngleOffsetDegrees = -368.5</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a1d45dc5c38b9a60702511920d2ed2e6e" name="a1d45dc5c38b9a60702511920d2ed2e6e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1d45dc5c38b9a60702511920d2ed2e6e">&#9670;&#160;</a></span>kClimberAPIId</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const int FeatherCanDecoder::kClimberAPIId = 3</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ae0dabc8526e82ae2c30cb78dfa735163" name="ae0dabc8526e82ae2c30cb78dfa735163"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae0dabc8526e82ae2c30cb78dfa735163">&#9670;&#160;</a></span>kClimberDeviceID</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const int FeatherCanDecoder::kClimberDeviceID = 3</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aee9999f4bbb620bbcb2c61e88bca1144" name="aee9999f4bbb620bbcb2c61e88bca1144"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aee9999f4bbb620bbcb2c61e88bca1144">&#9670;&#160;</a></span>kClimberProximityThreshold</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const int FeatherCanDecoder::kClimberProximityThreshold = 1500</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a9c2c2a9aca0d31f49f7eade6387978ac" name="a9c2c2a9aca0d31f49f7eade6387978ac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9c2c2a9aca0d31f49f7eade6387978ac">&#9670;&#160;</a></span>kCoralAngleOffsetDegrees</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const double FeatherCanDecoder::kCoralAngleOffsetDegrees = -258</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a19e9976fe552762181c9210c20073c5d" name="a19e9976fe552762181c9210c20073c5d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a19e9976fe552762181c9210c20073c5d">&#9670;&#160;</a></span>kCoralAPIId</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const int FeatherCanDecoder::kCoralAPIId = 1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad0c5bf616f10d77384b1710557b73540" name="ad0c5bf616f10d77384b1710557b73540"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad0c5bf616f10d77384b1710557b73540">&#9670;&#160;</a></span>kCoralDeviceID</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const int FeatherCanDecoder::kCoralDeviceID = 1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a99a0ec826b5bda4bbc9e2a7f264d2f92" name="a99a0ec826b5bda4bbc9e2a7f264d2f92"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a99a0ec826b5bda4bbc9e2a7f264d2f92">&#9670;&#160;</a></span>kCoralProximityThreshold</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const int FeatherCanDecoder::kCoralProximityThreshold = 1500</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a8c07b7d9a10a9e0cf11ab8e1c0549458" name="a8c07b7d9a10a9e0cf11ab8e1c0549458"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8c07b7d9a10a9e0cf11ab8e1c0549458">&#9670;&#160;</a></span>m_bellyPanCAN</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">frc::CAN FeatherCanDecoder::m_bellyPanCAN</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a72e8ca10c8e212b146823f099fd0016f" name="a72e8ca10c8e212b146823f099fd0016f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a72e8ca10c8e212b146823f099fd0016f">&#9670;&#160;</a></span>m_climberAngleDegrees</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float FeatherCanDecoder::m_climberAngleDegrees</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a7f4f8a976b733f624a433fe52cdf397b" name="a7f4f8a976b733f624a433fe52cdf397b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7f4f8a976b733f624a433fe52cdf397b">&#9670;&#160;</a></span>m_climberCAN</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">frc::CAN FeatherCanDecoder::m_climberCAN</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ab1ae66b641772f33a293903c95c48874" name="ab1ae66b641772f33a293903c95c48874"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab1ae66b641772f33a293903c95c48874">&#9670;&#160;</a></span>m_leftBellyPanDistance</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double FeatherCanDecoder::m_leftBellyPanDistance</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="af13c5a3eec32c337155c3838f59bb47e" name="af13c5a3eec32c337155c3838f59bb47e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af13c5a3eec32c337155c3838f59bb47e">&#9670;&#160;</a></span>m_leftProximity</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool FeatherCanDecoder::m_leftProximity</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a975b27fbdfded252293ffed2f0dc338c" name="a975b27fbdfded252293ffed2f0dc338c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a975b27fbdfded252293ffed2f0dc338c">&#9670;&#160;</a></span>m_rightBellyPanDistance</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double FeatherCanDecoder::m_rightBellyPanDistance</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="af776dd2bc4c906033e431ca351b0e160" name="af776dd2bc4c906033e431ca351b0e160"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af776dd2bc4c906033e431ca351b0e160">&#9670;&#160;</a></span>m_rightProximity</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool FeatherCanDecoder::m_rightProximity</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<p>This function parses all the CAN messages; this function must be called periodically. </p>
 
 </div>
 </div>

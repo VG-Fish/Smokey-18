@@ -127,7 +127,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a739796b2bdb3ac9a27dad5ef9cc6828c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDriveBackAfterScore.html#a739796b2bdb3ac9a27dad5ef9cc6828c">IsFinished</a> () override</td></tr>
 <tr class="separator:a739796b2bdb3ac9a27dad5ef9cc6828c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab53715a1bcac8ae593a54d5c4641ee17"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDriveBackAfterScore.html#ab53715a1bcac8ae593a54d5c4641ee17">End</a> (bool interrupted) override</td></tr>
-<tr class="memdesc:ab53715a1bcac8ae593a54d5c4641ee17"><td class="mdescLeft">&#160;</td><td class="mdescRight">After finishing the command, the robot's speed is set to zero to ensure the robot stops moving back.  <br /></td></tr>
+<tr class="memdesc:ab53715a1bcac8ae593a54d5c4641ee17"><td class="mdescLeft">&#160;</td><td class="mdescRight">After finishing the command, the robot's speed is zero to ensure the robot stops moving back.  <br /></td></tr>
 <tr class="separator:ab53715a1bcac8ae593a54d5c4641ee17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0bf1da0d13495226a0196d280e458c3d"><td class="memItemLeft" align="right" valign="top">units::inch_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDriveBackAfterScore.html#a0bf1da0d13495226a0196d280e458c3d">GetDistance</a> (frc::Pose2d first, frc::Pose2d second)</td></tr>
 <tr class="memdesc:a0bf1da0d13495226a0196d280e458c3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This helper function is intended to calculate the current distance traveled.  <br /></td></tr>
@@ -180,11 +180,10 @@ Static Public Attributes</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">drivetrain</td><td>This command takes in the drivetrain. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">distance</td><td>This is an optional parameter; the default distance is <a class="el" href="classDriveBackAfterScore.html#ab34166988da32b3f6a09f67cbc60be45" title="The default backward distance is 6 inches.">kDefaultDistance</a>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">distance</td><td>This is an optional parameter; the default distance is 6 inches. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classDriveBackAfterScore.html#ab34166988da32b3f6a09f67cbc60be45" title="The default backward distance is 6 inches.">kDefaultDistance</a> </dd></dl>
 
 </div>
 </div>
@@ -213,7 +212,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>After finishing the command, the robot's speed is set to zero to ensure the robot stops moving back. </p>
+<p>After finishing the command, the robot's speed is zero to ensure the robot stops moving back. </p>
 
 </div>
 </div>
@@ -276,7 +275,7 @@ Static Public Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The Euclidean distance between the two poses in inches, which is calculated using the Pythagorean theorem. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The Euclidean distance between the two poses, which is calculated using the Pythagorean theorem. </dd></dl>
 
 </div>
 </div>

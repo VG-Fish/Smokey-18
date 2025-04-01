@@ -25,6 +25,7 @@
 var NAVTREE =
 [
   [ "My Project", "index.html", [
+    [ "Todo List", "todo.html", null ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
@@ -63,7 +64,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "AlgaeSubsystem_8cpp.html",
-"classRobot.html#adc43256c650520c26a7922a25c989164"
+"classsubsystems_1_1CommandSwerveDrivetrain.html#a0ff6c866ecd5045e61cc40941c5db42c"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
