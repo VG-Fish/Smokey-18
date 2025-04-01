@@ -104,6 +104,9 @@ $(document).ready(function(){initNavTree('classDriveForwardToScore.html',''); in
 </div><!--header-->
 <div class="contents">
 
+<p>This class moves the robot forward to score a coral.  
+ <a href="classDriveForwardToScore.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="DriveForwardToScore_8h_source.html">DriveForwardToScore.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for DriveForwardToScore:</div>
@@ -115,6 +118,7 @@ Inheritance diagram for DriveForwardToScore:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a709288fc2f31d05b71d3ef56041526d9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDriveForwardToScore.html#a709288fc2f31d05b71d3ef56041526d9">DriveForwardToScore</a> (<a class="el" href="classsubsystems_1_1CommandSwerveDrivetrain.html">subsystems::CommandSwerveDrivetrain</a> *drivetrain, units::inch_t distance=<a class="el" href="classDriveForwardToScore.html#af5ff7da7c2586f759c9d82a7170f073f">kDefaultDistance</a>)</td></tr>
+<tr class="memdesc:a709288fc2f31d05b71d3ef56041526d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">This constructor takes in the drivetrain and a distance. The default backward distance is 6 inches.  <br /></td></tr>
 <tr class="separator:a709288fc2f31d05b71d3ef56041526d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f5aa1281992532064f8a34a76b3ca8a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDriveForwardToScore.html#a0f5aa1281992532064f8a34a76b3ca8a">Initialize</a> () override</td></tr>
 <tr class="separator:a0f5aa1281992532064f8a34a76b3ca8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -123,16 +127,21 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5b0f79044e4c87ff047dbfd73803cac7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDriveForwardToScore.html#a5b0f79044e4c87ff047dbfd73803cac7">IsFinished</a> () override</td></tr>
 <tr class="separator:a5b0f79044e4c87ff047dbfd73803cac7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a67ba16baedeea8543910bb4009f6fb96"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDriveForwardToScore.html#a67ba16baedeea8543910bb4009f6fb96">End</a> (bool interrupted) override</td></tr>
+<tr class="memdesc:a67ba16baedeea8543910bb4009f6fb96"><td class="mdescLeft">&#160;</td><td class="mdescRight">After finishing the command, the robot's speed is set to zero to ensure the robot stops moving forward.  <br /></td></tr>
 <tr class="separator:a67ba16baedeea8543910bb4009f6fb96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa53e566b31647bcb5c3313f7497ed7c3"><td class="memItemLeft" align="right" valign="top">units::inch_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDriveForwardToScore.html#aa53e566b31647bcb5c3313f7497ed7c3">GetDistance</a> (frc::Pose2d first, frc::Pose2d second)</td></tr>
+<tr class="memdesc:aa53e566b31647bcb5c3313f7497ed7c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">This helper function is intended to calculate the current distance traveled.  <br /></td></tr>
 <tr class="separator:aa53e566b31647bcb5c3313f7497ed7c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:af5ff7da7c2586f759c9d82a7170f073f"><td class="memItemLeft" align="right" valign="top">static constexpr units::inch_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDriveForwardToScore.html#af5ff7da7c2586f759c9d82a7170f073f">kDefaultDistance</a> = 7.5_in</td></tr>
+<tr class="memdesc:af5ff7da7c2586f759c9d82a7170f073f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default forward distance is 7.5 inches.  <br /></td></tr>
 <tr class="separator:af5ff7da7c2586f759c9d82a7170f073f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This class moves the robot forward to score a coral. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a709288fc2f31d05b71d3ef56041526d9" name="a709288fc2f31d05b71d3ef56041526d9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a709288fc2f31d05b71d3ef56041526d9">&#9670;&#160;</a></span>DriveForwardToScore()</h2>
 
@@ -167,6 +176,16 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>This constructor takes in the drivetrain and a distance. The default backward distance is 6 inches. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">drivetrain</td><td>This command takes in the drivetrain. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">distance</td><td>This is an optional parameter; the default distance is <a class="el" href="classDriveForwardToScore.html#af5ff7da7c2586f759c9d82a7170f073f" title="The default forward distance is 7.5 inches.">kDefaultDistance</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classDriveForwardToScore.html#af5ff7da7c2586f759c9d82a7170f073f" title="The default forward distance is 7.5 inches.">kDefaultDistance</a> </dd></dl>
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -193,6 +212,8 @@ Static Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>After finishing the command, the robot's speed is set to zero to ensure the robot stops moving forward. </p>
 
 </div>
 </div>
@@ -246,6 +267,16 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>This helper function is intended to calculate the current distance traveled. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">first</td><td>The first <code>frc::Pose2d</code>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">second</td><td>The second <code>frc::Pose2d</code>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The Euclidean distance between the two poses in inches, which is calculated using the Pythagorean theorem. </dd></dl>
 
 </div>
 </div>
@@ -319,6 +350,8 @@ Static Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>The default forward distance is 7.5 inches. </p>
 
 </div>
 </div>
