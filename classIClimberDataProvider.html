@@ -103,6 +103,9 @@ $(document).ready(function(){initNavTree('classIClimberDataProvider.html',''); i
 </div><!--header-->
 <div class="contents">
 
+<p>Contains all the functions necessary for the climber mechanism.  
+ <a href="classIClimberDataProvider.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="IClimberDataProvider_8h_source.html">IClimberDataProvider.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for IClimberDataProvider:</div>
@@ -117,15 +120,21 @@ Inheritance diagram for IClimberDataProvider:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a60ec633c8c5dffadb902cbe82a0e17c8"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIClimberDataProvider.html#a60ec633c8c5dffadb902cbe82a0e17c8">GetClimberAngleDegrees</a> ()=0</td></tr>
+<tr class="memdesc:a60ec633c8c5dffadb902cbe82a0e17c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provide the angle of the climber intake/delivery mechanism in degrees.  <br /></td></tr>
 <tr class="separator:a60ec633c8c5dffadb902cbe82a0e17c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82cf41161ed4435b04d849b3d6e1dabf"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIClimberDataProvider.html#a82cf41161ed4435b04d849b3d6e1dabf">GetClimberRawAngleDegrees</a> ()=0</td></tr>
+<tr class="memdesc:a82cf41161ed4435b04d849b3d6e1dabf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provide the raw angle of the climber mechanism. Does not include any offsets.  <br /></td></tr>
 <tr class="separator:a82cf41161ed4435b04d849b3d6e1dabf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2245439b920e4126e66508d3ff95ded"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIClimberDataProvider.html#ac2245439b920e4126e66508d3ff95ded">IsRightCageHooked</a> ()=0</td></tr>
+<tr class="memdesc:ac2245439b920e4126e66508d3ff95ded"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a simple boolean to indicate whether the right part of climber has collected the cage.  <br /></td></tr>
 <tr class="separator:ac2245439b920e4126e66508d3ff95ded"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4966d9a16543f5a4411c3d8719039ad8"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIClimberDataProvider.html#a4966d9a16543f5a4411c3d8719039ad8">IsLeftCageHooked</a> ()=0</td></tr>
+<tr class="memdesc:a4966d9a16543f5a4411c3d8719039ad8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a simple boolean to indicate whether the left part of climber has collected the cage.  <br /></td></tr>
 <tr class="separator:a4966d9a16543f5a4411c3d8719039ad8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Contains all the functions necessary for the climber mechanism. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a60ec633c8c5dffadb902cbe82a0e17c8" name="a60ec633c8c5dffadb902cbe82a0e17c8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a60ec633c8c5dffadb902cbe82a0e17c8">&#9670;&#160;</a></span>GetClimberAngleDegrees()</h2>
 
@@ -148,6 +157,8 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Provide the angle of the climber intake/delivery mechanism in degrees. </p>
 
 <p>Implemented in <a class="el" href="classFeatherCanDecoder.html#ae96caa0d6114a6935f4a6252a096ecb0">FeatherCanDecoder</a>.</p>
 
@@ -176,6 +187,8 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Provide the raw angle of the climber mechanism. Does not include any offsets. </p>
+
 <p>Implemented in <a class="el" href="classFeatherCanDecoder.html#aac2fc93cbd813ff41bbeae01f20dd18a">FeatherCanDecoder</a>.</p>
 
 </div>
@@ -203,6 +216,8 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Return a simple boolean to indicate whether the left part of climber has collected the cage. </p>
+
 <p>Implemented in <a class="el" href="classFeatherCanDecoder.html#a37e8d55ef0c8520832f43b60122acb8e">FeatherCanDecoder</a>.</p>
 
 </div>
@@ -229,6 +244,8 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Return a simple boolean to indicate whether the right part of climber has collected the cage. </p>
 
 <p>Implemented in <a class="el" href="classFeatherCanDecoder.html#ab6202b706df08135ff5a3a8592a1c35d">FeatherCanDecoder</a>.</p>
 

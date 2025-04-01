@@ -113,10 +113,10 @@ Inheritance diagram for FeatherCanDecoder:</div>
  <div class="center">
   <img src="classFeatherCanDecoder.png" usemap="#FeatherCanDecoder_map" alt=""/>
   <map id="FeatherCanDecoder_map" name="FeatherCanDecoder_map">
-<area href="classICoralIntakeDataProvider.html" alt="ICoralIntakeDataProvider" shape="rect" coords="0,0,154,24"/>
-<area href="classIClimberDataProvider.html" alt="IClimberDataProvider" shape="rect" coords="164,0,318,24"/>
-<area href="classIBellyPanDataProvider.html" alt="IBellyPanDataProvider" shape="rect" coords="328,0,482,24"/>
-<area href="classIAlgaeDataProvider.html" alt="IAlgaeDataProvider" shape="rect" coords="492,0,646,24"/>
+<area href="classICoralIntakeDataProvider.html" title="Contains all the functions necessary for the coral arm." alt="ICoralIntakeDataProvider" shape="rect" coords="0,0,154,24"/>
+<area href="classIClimberDataProvider.html" title="Contains all the functions necessary for the climber mechanism." alt="IClimberDataProvider" shape="rect" coords="164,0,318,24"/>
+<area href="classIBellyPanDataProvider.html" title="Contains all the functions necessary for getting Time of Flight sensor data." alt="IBellyPanDataProvider" shape="rect" coords="328,0,482,24"/>
+<area href="classIAlgaeDataProvider.html" title="Contains all the functions necessary for the algae arm." alt="IAlgaeDataProvider" shape="rect" coords="492,0,646,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -134,6 +134,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ac4834d4ca16e2aef9ba0c1b799501386"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the raw <b>absolute</b> angle of the coral arm.  <br /></td></tr>
 <tr class="separator:ac4834d4ca16e2aef9ba0c1b799501386"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8fb3fb6e8998f5cf6105bb4e57ff5382"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFeatherCanDecoder.html#a8fb3fb6e8998f5cf6105bb4e57ff5382">IsCoralAngleValid</a> () override</td></tr>
+<tr class="memdesc:a8fb3fb6e8998f5cf6105bb4e57ff5382"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines whether the <b>absolute</b> coral angle data is valid.  <br /></td></tr>
 <tr class="separator:a8fb3fb6e8998f5cf6105bb4e57ff5382"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74788bd6490dee4f5b70f866910b322e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFeatherCanDecoder.html#a74788bd6490dee4f5b70f866910b322e">IsCoralCollected</a> () override</td></tr>
 <tr class="separator:a74788bd6490dee4f5b70f866910b322e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -160,30 +161,41 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aee84c1d2b387ce78ed433c579f6468c4"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFeatherCanDecoder.html#aee84c1d2b387ce78ed433c579f6468c4">GetBellyPanRightDistance</a> () override</td></tr>
 <tr class="separator:aee84c1d2b387ce78ed433c579f6468c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac95f3ad61696bec0fd3ebf2307a69212"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classICoralIntakeDataProvider.html#ac95f3ad61696bec0fd3ebf2307a69212">GetCoralIntakeAngleDegrees</a> ()=0</td></tr>
+<tr class="memdesc:ac95f3ad61696bec0fd3ebf2307a69212"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provide the angle of the coral intake/delivery mechanism in degrees.  <br /></td></tr>
 <tr class="separator:ac95f3ad61696bec0fd3ebf2307a69212"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41ab9c055e8c6e88fe73a4a00d5c7ffd"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classICoralIntakeDataProvider.html#a41ab9c055e8c6e88fe73a4a00d5c7ffd">GetCoralIntakeRawAngleDegrees</a> ()=0</td></tr>
+<tr class="memdesc:a41ab9c055e8c6e88fe73a4a00d5c7ffd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provide the raw angle of the coral mechanism. Does not include any offsets.  <br /></td></tr>
 <tr class="separator:a41ab9c055e8c6e88fe73a4a00d5c7ffd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5307593e3b44bc120ca79d07ccd39309"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classICoralIntakeDataProvider.html#a5307593e3b44bc120ca79d07ccd39309">IsCoralAngleValid</a> ()=0</td></tr>
+<tr class="memdesc:a5307593e3b44bc120ca79d07ccd39309"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines whether the <b>absolute</b> coral angle data is valid.  <br /></td></tr>
 <tr class="separator:a5307593e3b44bc120ca79d07ccd39309"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50bca8080b294cf29e3aac2fdef61377"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classICoralIntakeDataProvider.html#a50bca8080b294cf29e3aac2fdef61377">IsCoralCollected</a> ()=0</td></tr>
+<tr class="memdesc:a50bca8080b294cf29e3aac2fdef61377"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a simple boolean to indicate whether a piece of coral has been collected.  <br /></td></tr>
 <tr class="separator:a50bca8080b294cf29e3aac2fdef61377"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60ec633c8c5dffadb902cbe82a0e17c8"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIClimberDataProvider.html#a60ec633c8c5dffadb902cbe82a0e17c8">GetClimberAngleDegrees</a> ()=0</td></tr>
+<tr class="memdesc:a60ec633c8c5dffadb902cbe82a0e17c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provide the angle of the climber intake/delivery mechanism in degrees.  <br /></td></tr>
 <tr class="separator:a60ec633c8c5dffadb902cbe82a0e17c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82cf41161ed4435b04d849b3d6e1dabf"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIClimberDataProvider.html#a82cf41161ed4435b04d849b3d6e1dabf">GetClimberRawAngleDegrees</a> ()=0</td></tr>
+<tr class="memdesc:a82cf41161ed4435b04d849b3d6e1dabf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provide the raw angle of the climber mechanism. Does not include any offsets.  <br /></td></tr>
 <tr class="separator:a82cf41161ed4435b04d849b3d6e1dabf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2245439b920e4126e66508d3ff95ded"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIClimberDataProvider.html#ac2245439b920e4126e66508d3ff95ded">IsRightCageHooked</a> ()=0</td></tr>
+<tr class="memdesc:ac2245439b920e4126e66508d3ff95ded"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a simple boolean to indicate whether the right part of climber has collected the cage.  <br /></td></tr>
 <tr class="separator:ac2245439b920e4126e66508d3ff95ded"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4966d9a16543f5a4411c3d8719039ad8"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIClimberDataProvider.html#a4966d9a16543f5a4411c3d8719039ad8">IsLeftCageHooked</a> ()=0</td></tr>
+<tr class="memdesc:a4966d9a16543f5a4411c3d8719039ad8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a simple boolean to indicate whether the left part of climber has collected the cage.  <br /></td></tr>
 <tr class="separator:a4966d9a16543f5a4411c3d8719039ad8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a877eba8e05384559a6ccba9e98cd2a94"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIBellyPanDataProvider.html#a877eba8e05384559a6ccba9e98cd2a94">GetBellyPanRightDistance</a> ()=0</td></tr>
 <tr class="separator:a877eba8e05384559a6ccba9e98cd2a94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a438d6dd9780ce363d2c821628391498c"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIBellyPanDataProvider.html#a438d6dd9780ce363d2c821628391498c">GetBellyPanLeftDistance</a> ()=0</td></tr>
 <tr class="separator:a438d6dd9780ce363d2c821628391498c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1de8d218bedefeb1e42ebd035f12fa55"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIAlgaeDataProvider.html#a1de8d218bedefeb1e42ebd035f12fa55">GetAlgaeAngleDegrees</a> ()=0</td></tr>
+<tr class="memdesc:a1de8d218bedefeb1e42ebd035f12fa55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provide the angle of the algae intake/delivery mechanism in degrees.  <br /></td></tr>
 <tr class="separator:a1de8d218bedefeb1e42ebd035f12fa55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56cac7dfa2811f57a7427a92f1755da1"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIAlgaeDataProvider.html#a56cac7dfa2811f57a7427a92f1755da1">GetAlgaeRawAngleDegrees</a> ()=0</td></tr>
+<tr class="memdesc:a56cac7dfa2811f57a7427a92f1755da1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provide the raw angle of the algae mechanism. Does not include any offsets.  <br /></td></tr>
 <tr class="separator:a56cac7dfa2811f57a7427a92f1755da1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acfdf97fb845ed553c4169e26170a540f"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIAlgaeDataProvider.html#acfdf97fb845ed553c4169e26170a540f">IsAlgaeCollected</a> ()=0</td></tr>
+<tr class="memdesc:acfdf97fb845ed553c4169e26170a540f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a simple boolean to indicate whether a piece of algae has been collected.  <br /></td></tr>
 <tr class="separator:acfdf97fb845ed553c4169e26170a540f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -491,6 +503,8 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Determines whether the <b>absolute</b> coral angle data is valid. </p>
 
 <p>Implements <a class="el" href="classICoralIntakeDataProvider.html#a5307593e3b44bc120ca79d07ccd39309">ICoralIntakeDataProvider</a>.</p>
 

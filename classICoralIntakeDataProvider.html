@@ -103,6 +103,9 @@ $(document).ready(function(){initNavTree('classICoralIntakeDataProvider.html',''
 </div><!--header-->
 <div class="contents">
 
+<p>Contains all the functions necessary for the coral arm.  
+ <a href="classICoralIntakeDataProvider.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="ICoralIntakeDataProvider_8h_source.html">ICoralIntakeDataProvider.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for ICoralIntakeDataProvider:</div>
@@ -117,15 +120,21 @@ Inheritance diagram for ICoralIntakeDataProvider:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ac95f3ad61696bec0fd3ebf2307a69212"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classICoralIntakeDataProvider.html#ac95f3ad61696bec0fd3ebf2307a69212">GetCoralIntakeAngleDegrees</a> ()=0</td></tr>
+<tr class="memdesc:ac95f3ad61696bec0fd3ebf2307a69212"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provide the angle of the coral intake/delivery mechanism in degrees.  <br /></td></tr>
 <tr class="separator:ac95f3ad61696bec0fd3ebf2307a69212"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41ab9c055e8c6e88fe73a4a00d5c7ffd"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classICoralIntakeDataProvider.html#a41ab9c055e8c6e88fe73a4a00d5c7ffd">GetCoralIntakeRawAngleDegrees</a> ()=0</td></tr>
+<tr class="memdesc:a41ab9c055e8c6e88fe73a4a00d5c7ffd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provide the raw angle of the coral mechanism. Does not include any offsets.  <br /></td></tr>
 <tr class="separator:a41ab9c055e8c6e88fe73a4a00d5c7ffd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5307593e3b44bc120ca79d07ccd39309"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classICoralIntakeDataProvider.html#a5307593e3b44bc120ca79d07ccd39309">IsCoralAngleValid</a> ()=0</td></tr>
+<tr class="memdesc:a5307593e3b44bc120ca79d07ccd39309"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines whether the <b>absolute</b> coral angle data is valid.  <br /></td></tr>
 <tr class="separator:a5307593e3b44bc120ca79d07ccd39309"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50bca8080b294cf29e3aac2fdef61377"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classICoralIntakeDataProvider.html#a50bca8080b294cf29e3aac2fdef61377">IsCoralCollected</a> ()=0</td></tr>
+<tr class="memdesc:a50bca8080b294cf29e3aac2fdef61377"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a simple boolean to indicate whether a piece of coral has been collected.  <br /></td></tr>
 <tr class="separator:a50bca8080b294cf29e3aac2fdef61377"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Contains all the functions necessary for the coral arm. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ac95f3ad61696bec0fd3ebf2307a69212" name="ac95f3ad61696bec0fd3ebf2307a69212"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac95f3ad61696bec0fd3ebf2307a69212">&#9670;&#160;</a></span>GetCoralIntakeAngleDegrees()</h2>
 
@@ -148,6 +157,8 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Provide the angle of the coral intake/delivery mechanism in degrees. </p>
 
 <p>Implemented in <a class="el" href="classFeatherCanDecoder.html#ac8cbbd5047d1a0eb20fe473f55b2e144">FeatherCanDecoder</a>.</p>
 
@@ -176,6 +187,8 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Provide the raw angle of the coral mechanism. Does not include any offsets. </p>
+
 <p>Implemented in <a class="el" href="classFeatherCanDecoder.html#ac4834d4ca16e2aef9ba0c1b799501386">FeatherCanDecoder</a>.</p>
 
 </div>
@@ -203,6 +216,8 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Determines whether the <b>absolute</b> coral angle data is valid. </p>
+
 <p>Implemented in <a class="el" href="classFeatherCanDecoder.html#a8fb3fb6e8998f5cf6105bb4e57ff5382">FeatherCanDecoder</a>.</p>
 
 </div>
@@ -229,6 +244,8 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Return a simple boolean to indicate whether a piece of coral has been collected. </p>
 
 <p>Implemented in <a class="el" href="classFeatherCanDecoder.html#a74788bd6490dee4f5b70f866910b322e">FeatherCanDecoder</a>.</p>
 
