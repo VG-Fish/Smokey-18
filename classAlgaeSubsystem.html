@@ -103,6 +103,9 @@ $(document).ready(function(){initNavTree('classAlgaeSubsystem.html',''); initRes
 </div><!--header-->
 <div class="contents">
 
+<p>This subsystem deals with removing algae from the reef.  
+ <a href="classAlgaeSubsystem.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="AlgaeSubsystem_8h_source.html">AlgaeSubsystem.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for AlgaeSubsystem:</div>
@@ -118,17 +121,22 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4b8535325580ad9762114bb442401aab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAlgaeSubsystem.html#a4b8535325580ad9762114bb442401aab">Periodic</a> ()</td></tr>
 <tr class="separator:a4b8535325580ad9762114bb442401aab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1209e45a0ec2999e8f34d383250e90bf"><td class="memItemLeft" align="right" valign="top">frc2::CommandPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAlgaeSubsystem.html#a1209e45a0ec2999e8f34d383250e90bf">Intake</a> ()</td></tr>
+<tr class="memdesc:a1209e45a0ec2999e8f34d383250e90bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs the algae intake motor <b>counter-clockwise.</b>  <br /></td></tr>
 <tr class="separator:a1209e45a0ec2999e8f34d383250e90bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ccc2b2430be52cf6e8a6219b9140d6c"><td class="memItemLeft" align="right" valign="top">frc2::CommandPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAlgaeSubsystem.html#a2ccc2b2430be52cf6e8a6219b9140d6c">Dispense</a> ()</td></tr>
+<tr class="memdesc:a2ccc2b2430be52cf6e8a6219b9140d6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs the algae intake motor <b>clockwise.</b>  <br /></td></tr>
 <tr class="separator:a2ccc2b2430be52cf6e8a6219b9140d6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add2af71d43a3be5874d6def7056f10b5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAlgaeSubsystem.html#add2af71d43a3be5874d6def7056f10b5">IsAlgaeStored</a> ()</td></tr>
 <tr class="separator:add2af71d43a3be5874d6def7056f10b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9a6ac85003d6179c2f62d301c70cb87"><td class="memItemLeft" align="right" valign="top">frc2::CommandPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAlgaeSubsystem.html#ac9a6ac85003d6179c2f62d301c70cb87">SetGoalAngle</a> (units::degree_t angle)</td></tr>
+<tr class="memdesc:ac9a6ac85003d6179c2f62d301c70cb87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the goal angle the algae arm should reach.  <br /></td></tr>
 <tr class="separator:ac9a6ac85003d6179c2f62d301c70cb87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09b7c5ba639a6e5c90df85354978eccc"><td class="memItemLeft" align="right" valign="top">units::degree_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAlgaeSubsystem.html#a09b7c5ba639a6e5c90df85354978eccc">CurrentAngle</a> ()</td></tr>
 <tr class="separator:a09b7c5ba639a6e5c90df85354978eccc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This subsystem deals with removing algae from the reef. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a3aa7ba88efe6fc1a440aeccff0a7c75b" name="a3aa7ba88efe6fc1a440aeccff0a7c75b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3aa7ba88efe6fc1a440aeccff0a7c75b">&#9670;&#160;</a></span>AlgaeSubsystem()</h2>
 
@@ -180,6 +188,8 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Runs the algae intake motor <b>clockwise.</b> </p>
+
 </div>
 </div>
 <a id="a1209e45a0ec2999e8f34d383250e90bf" name="a1209e45a0ec2999e8f34d383250e90bf"></a>
@@ -196,6 +206,8 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Runs the algae intake motor <b>counter-clockwise.</b> </p>
 
 </div>
 </div>
@@ -248,6 +260,8 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Sets the goal angle the algae arm should reach. </p>
 
 </div>
 </div>

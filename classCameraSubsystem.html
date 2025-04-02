@@ -103,6 +103,9 @@ $(document).ready(function(){initNavTree('classCameraSubsystem.html',''); initRe
 </div><!--header-->
 <div class="contents">
 
+<p>This subsystem uses PhotonVision and a Limelight 3 to recognize AprilTags.  
+ <a href="classCameraSubsystem.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="CameraSubsystem_8h_source.html">CameraSubsystem.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for CameraSubsystem:</div>
@@ -116,25 +119,35 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad8236987d21aef86131e406bf219cad4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCameraSubsystem.html#ad8236987d21aef86131e406bf219cad4">CameraSubsystem</a> (<a class="el" href="classsubsystems_1_1CommandSwerveDrivetrain.html">subsystems::CommandSwerveDrivetrain</a> *drivetrain)</td></tr>
 <tr class="separator:ad8236987d21aef86131e406bf219cad4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab75894336f46e77a5be7175b25b04cfe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCameraSubsystem.html#ab75894336f46e77a5be7175b25b04cfe">updateData</a> ()</td></tr>
+<tr class="memdesc:ab75894336f46e77a5be7175b25b04cfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function parses camera data.  <br /></td></tr>
 <tr class="separator:ab75894336f46e77a5be7175b25b04cfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a926ce81f6ddfe355ea3de5f893bf0417"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCameraSubsystem.html#a926ce81f6ddfe355ea3de5f893bf0417">visibleTargets</a> ()</td></tr>
+<tr class="memdesc:a926ce81f6ddfe355ea3de5f893bf0417"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether AprilTag(s) exist.  <br /></td></tr>
 <tr class="separator:a926ce81f6ddfe355ea3de5f893bf0417"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae21eca3e4471ff9e041994942a92c08b"><td class="memItemLeft" align="right" valign="top">units::meter_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCameraSubsystem.html#ae21eca3e4471ff9e041994942a92c08b">getStrafeTransformation</a> ()</td></tr>
+<tr class="memdesc:ae21eca3e4471ff9e041994942a92c08b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the Y <b>robot oriented</b> distance from the camera to the best AprilTag.  <br /></td></tr>
 <tr class="separator:ae21eca3e4471ff9e041994942a92c08b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab57085df0836d7aff4b662cbae0e909b"><td class="memItemLeft" align="right" valign="top">units::meter_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCameraSubsystem.html#ab57085df0836d7aff4b662cbae0e909b">getForwardTransformation</a> ()</td></tr>
+<tr class="memdesc:ab57085df0836d7aff4b662cbae0e909b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the X <b>robot oriented</b> distance from the camera to the best AprilTag.  <br /></td></tr>
 <tr class="separator:ab57085df0836d7aff4b662cbae0e909b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93a6d1a554bb378b11d32cc3b59a83f6"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCameraSubsystem.html#a93a6d1a554bb378b11d32cc3b59a83f6">getDistance</a> ()</td></tr>
+<tr class="memdesc:a93a6d1a554bb378b11d32cc3b59a83f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the straight line distance from the camera to the AprilTag. AprilTag.  <br /></td></tr>
 <tr class="separator:a93a6d1a554bb378b11d32cc3b59a83f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6446042dbb6784f625a87b0387fdfe4"><td class="memItemLeft" align="right" valign="top">units::degree_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCameraSubsystem.html#ae6446042dbb6784f625a87b0387fdfe4">getZRotation</a> ()</td></tr>
+<tr class="memdesc:ae6446042dbb6784f625a87b0387fdfe4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the Z rotation needed to orient the camera to the AprilTag.  <br /></td></tr>
 <tr class="separator:ae6446042dbb6784f625a87b0387fdfe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54e04ff757a80fef31e39a940c3a4f2a"><td class="memItemLeft" align="right" valign="top">frc::Rotation2d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCameraSubsystem.html#a54e04ff757a80fef31e39a940c3a4f2a">GetRotation2d</a> ()</td></tr>
+<tr class="memdesc:a54e04ff757a80fef31e39a940c3a4f2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the rotation needed to orient the camera to the AprilTag.  <br /></td></tr>
 <tr class="separator:a54e04ff757a80fef31e39a940c3a4f2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87b0d9508c3c0c290b06fc659088009a"><td class="memItemLeft" align="right" valign="top">std::optional&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCameraSubsystem.html#a87b0d9508c3c0c290b06fc659088009a">GetTargetTagId</a> ()</td></tr>
+<tr class="memdesc:a87b0d9508c3c0c290b06fc659088009a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the ID of the best AprilTag, <b>if</b> it exists.  <br /></td></tr>
 <tr class="separator:a87b0d9508c3c0c290b06fc659088009a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59fbd42d8d3dd5b4ea1221ead7bdaac3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCameraSubsystem.html#a59fbd42d8d3dd5b4ea1221ead7bdaac3">Periodic</a> () override</td></tr>
 <tr class="separator:a59fbd42d8d3dd5b4ea1221ead7bdaac3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This subsystem uses PhotonVision and a Limelight 3 to recognize AprilTags. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ad8236987d21aef86131e406bf219cad4" name="ad8236987d21aef86131e406bf219cad4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad8236987d21aef86131e406bf219cad4">&#9670;&#160;</a></span>CameraSubsystem()</h2>
 
@@ -169,6 +182,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Returns the straight line distance from the camera to the AprilTag. AprilTag. </p>
+<dl class="section return"><dt>Returns</dt><dd>The distance in meters. </dd></dl>
+
 </div>
 </div>
 <a id="ab57085df0836d7aff4b662cbae0e909b" name="ab57085df0836d7aff4b662cbae0e909b"></a>
@@ -185,6 +201,9 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Returns the X <b>robot oriented</b> distance from the camera to the best AprilTag. </p>
+<dl class="section return"><dt>Returns</dt><dd>The X distance in meters. </dd></dl>
 
 </div>
 </div>
@@ -203,6 +222,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Returns the rotation needed to orient the camera to the AprilTag. </p>
+<dl class="section return"><dt>Returns</dt><dd>The rotation is a <code>frc::Rotation2d</code>. </dd></dl>
+
 </div>
 </div>
 <a id="ae21eca3e4471ff9e041994942a92c08b" name="ae21eca3e4471ff9e041994942a92c08b"></a>
@@ -219,6 +241,9 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Returns the Y <b>robot oriented</b> distance from the camera to the best AprilTag. </p>
+<dl class="section return"><dt>Returns</dt><dd>The Y distance in meters. </dd></dl>
 
 </div>
 </div>
@@ -237,6 +262,8 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Returns the ID of the best AprilTag, <b>if</b> it exists. </p>
+
 </div>
 </div>
 <a id="ae6446042dbb6784f625a87b0387fdfe4" name="ae6446042dbb6784f625a87b0387fdfe4"></a>
@@ -253,6 +280,9 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Returns the Z rotation needed to orient the camera to the AprilTag. </p>
+<dl class="section return"><dt>Returns</dt><dd>The distance in degrees. </dd></dl>
 
 </div>
 </div>
@@ -296,6 +326,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>This function parses camera data. </p>
+<p>This updates local variables, such as the current best AprilTag and the transformation to it. This function <b>must</b> be called periodically to ensure accurate data. </p>
+
 </div>
 </div>
 <a id="a926ce81f6ddfe355ea3de5f893bf0417" name="a926ce81f6ddfe355ea3de5f893bf0417"></a>
@@ -312,6 +345,8 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Returns whether AprilTag(s) exist. </p>
 
 </div>
 </div>
