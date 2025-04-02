@@ -103,6 +103,9 @@ $(document).ready(function(){initNavTree('classLED.html',''); initResizable(); }
 </div><!--header-->
 <div class="contents">
 
+<p>This class controls <a class="el" href="classLED.html" title="This class controls LED lights for different situations. See ArduinoConstants::RIO_MESSAGES for these...">LED</a> lights for different situations. See <a class="el" href="namespaceArduinoConstants.html#ab429c4350cb2cd0ea9bc36c5e7d1aaea">ArduinoConstants::RIO_MESSAGES</a> for these situations.  
+ <a href="classLED.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="LED_8h_source.html">LED.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for LED:</div>
@@ -118,13 +121,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:acd8f1912e1e7a85e033feb7cd89a3f3b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLED.html#acd8f1912e1e7a85e033feb7cd89a3f3b">~LED</a> () override</td></tr>
 <tr class="separator:acd8f1912e1e7a85e033feb7cd89a3f3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad785a3fd755af3ab7de7050cdad73479"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLED.html#ad785a3fd755af3ab7de7050cdad73479">Periodic</a> () override</td></tr>
+<tr class="memdesc:ad785a3fd755af3ab7de7050cdad73479"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads and sends messages to the Arduino board (that's connected to the RoboRio) to change the <a class="el" href="classLED.html" title="This class controls LED lights for different situations. See ArduinoConstants::RIO_MESSAGES for these...">LED</a> patterns for different situations.  <br /></td></tr>
 <tr class="separator:ad785a3fd755af3ab7de7050cdad73479"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4716d6837a2d4a8a54f2b273b5c35e9a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLED.html#a4716d6837a2d4a8a54f2b273b5c35e9a">SetLEDState</a> (<a class="el" href="namespaceArduinoConstants.html#ab429c4350cb2cd0ea9bc36c5e7d1aaea">ArduinoConstants::RIO_MESSAGES</a> ledState)</td></tr>
+<tr class="memdesc:a4716d6837a2d4a8a54f2b273b5c35e9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the current <a class="el" href="classLED.html" title="This class controls LED lights for different situations. See ArduinoConstants::RIO_MESSAGES for these...">LED</a> state.  <br /></td></tr>
 <tr class="separator:a4716d6837a2d4a8a54f2b273b5c35e9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ee154a223b81c26bb7e4a52d19f2643"><td class="memItemLeft" align="right" valign="top">frc2::CommandPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLED.html#a6ee154a223b81c26bb7e4a52d19f2643">SetLEDStateCommand</a> (<a class="el" href="namespaceArduinoConstants.html#ab429c4350cb2cd0ea9bc36c5e7d1aaea">ArduinoConstants::RIO_MESSAGES</a> ledState)</td></tr>
+<tr class="memdesc:a6ee154a223b81c26bb7e4a52d19f2643"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <code>frc2::CommandPtr</code> version of <a class="el" href="classLED.html#a4716d6837a2d4a8a54f2b273b5c35e9a">LED::SetLEDState</a>.  <br /></td></tr>
 <tr class="separator:a6ee154a223b81c26bb7e4a52d19f2643"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This class controls <a class="el" href="classLED.html" title="This class controls LED lights for different situations. See ArduinoConstants::RIO_MESSAGES for these...">LED</a> lights for different situations. See <a class="el" href="namespaceArduinoConstants.html#ab429c4350cb2cd0ea9bc36c5e7d1aaea">ArduinoConstants::RIO_MESSAGES</a> for these situations. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a979c15b97f7c7bc41e683e3f5ffa97e5" name="a979c15b97f7c7bc41e683e3f5ffa97e5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a979c15b97f7c7bc41e683e3f5ffa97e5">&#9670;&#160;</a></span>LED()</h2>
 
@@ -191,6 +199,8 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Reads and sends messages to the Arduino board (that's connected to the RoboRio) to change the <a class="el" href="classLED.html" title="This class controls LED lights for different situations. See ArduinoConstants::RIO_MESSAGES for these...">LED</a> patterns for different situations. </p>
+
 </div>
 </div>
 <a id="a4716d6837a2d4a8a54f2b273b5c35e9a" name="a4716d6837a2d4a8a54f2b273b5c35e9a"></a>
@@ -209,6 +219,14 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Changes the current <a class="el" href="classLED.html" title="This class controls LED lights for different situations. See ArduinoConstants::RIO_MESSAGES for these...">LED</a> state. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ledState</td><td>The desired <a class="el" href="classLED.html" title="This class controls LED lights for different situations. See ArduinoConstants::RIO_MESSAGES for these...">LED</a> state to change to. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a6ee154a223b81c26bb7e4a52d19f2643" name="a6ee154a223b81c26bb7e4a52d19f2643"></a>
@@ -226,6 +244,8 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>The <code>frc2::CommandPtr</code> version of <a class="el" href="classLED.html#a4716d6837a2d4a8a54f2b273b5c35e9a">LED::SetLEDState</a>. </p>
 
 </div>
 </div>

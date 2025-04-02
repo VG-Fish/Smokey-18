@@ -104,6 +104,9 @@ $(document).ready(function(){initNavTree('classRobotContainer.html',''); initRes
 </div><!--header-->
 <div class="contents">
 
+<p>This class is where all of the subsystems are included and commands are binded to triggers.  
+ <a href="classRobotContainer.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="RobotContainer_8h_source.html">RobotContainer.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -113,8 +116,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4ac35c4eade0422c19b5d1e037cc7647"><td class="memItemLeft" align="right" valign="top">frc2::Command *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRobotContainer.html#a4ac35c4eade0422c19b5d1e037cc7647">GetAutonomousCommand</a> ()</td></tr>
 <tr class="separator:a4ac35c4eade0422c19b5d1e037cc7647"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77499620eb5b6eadcbe215f6f4c03797"><td class="memItemLeft" align="right" valign="top">frc2::CommandPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRobotContainer.html#a77499620eb5b6eadcbe215f6f4c03797">AddControllerRumble</a> (frc::GenericHID::RumbleType rumbleType, double rumble)</td></tr>
+<tr class="memdesc:a77499620eb5b6eadcbe215f6f4c03797"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function adds controller rumble to the driver controller.  <br /></td></tr>
 <tr class="separator:a77499620eb5b6eadcbe215f6f4c03797"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae26f32bc455024464602e4d44a62af6d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRobotContainer.html#ae26f32bc455024464602e4d44a62af6d">ResetRobotForAutonomous</a> ()</td></tr>
+<tr class="memdesc:ae26f32bc455024464602e4d44a62af6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function will point the swerves straight to speed up autos.  <br /></td></tr>
 <tr class="separator:ae26f32bc455024464602e4d44a62af6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2da3950d527e4b97aff946e8cddb8dd"><td class="memItemLeft" align="right" valign="top">frc2::CommandPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRobotContainer.html#ad2da3950d527e4b97aff946e8cddb8dd">ResetRobotForTeleOp</a> ()</td></tr>
 <tr class="separator:ad2da3950d527e4b97aff946e8cddb8dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -124,7 +129,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:aa713a3eddf18e12bcb29fa8d3f14bebb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsubsystems_1_1CommandSwerveDrivetrain.html">subsystems::CommandSwerveDrivetrain</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRobotContainer.html#aa713a3eddf18e12bcb29fa8d3f14bebb">m_drivetrain</a> {<a class="el" href="classTunerConstants.html#abbe59b658724f13d56a2a9f903d151be">TunerConstants::CreateDrivetrain</a>()}</td></tr>
 <tr class="separator:aa713a3eddf18e12bcb29fa8d3f14bebb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This class is where all of the subsystems are included and commands are binded to triggers. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a9fa04f6a32622d297215dc7444d385c2" name="a9fa04f6a32622d297215dc7444d385c2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9fa04f6a32622d297215dc7444d385c2">&#9670;&#160;</a></span>RobotContainer()</h2>
 
@@ -170,6 +177,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>This function adds controller rumble to the driver controller. </p>
+
 </div>
 </div>
 <a id="a4ac35c4eade0422c19b5d1e037cc7647" name="a4ac35c4eade0422c19b5d1e037cc7647"></a>
@@ -203,6 +212,8 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>This function will point the swerves straight to speed up autos. </p>
 
 </div>
 </div>

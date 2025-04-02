@@ -103,6 +103,9 @@ $(document).ready(function(){initNavTree('classCoralSubsystem.html',''); initRes
 </div><!--header-->
 <div class="contents">
 
+<p>The subsystem controls the coral arm.  
+ <a href="classCoralSubsystem.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="CoralSubsystem_8h_source.html">CoralSubsystem.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for CoralSubsystem:</div>
@@ -118,21 +121,29 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3ce9ae751909cbc30d375bc2826d5011"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoralSubsystem.html#a3ce9ae751909cbc30d375bc2826d5011">Periodic</a> () override</td></tr>
 <tr class="separator:a3ce9ae751909cbc30d375bc2826d5011"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a66ba337ab9af457a0bbbc8008e7846f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoralSubsystem.html#a66ba337ab9af457a0bbbc8008e7846f1">SetIntakeSpeed</a> (double speed)</td></tr>
+<tr class="memdesc:a66ba337ab9af457a0bbbc8008e7846f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the speed of the coral arm.  <br /></td></tr>
 <tr class="separator:a66ba337ab9af457a0bbbc8008e7846f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac884397d65d5dc6820add75d394aa1c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoralSubsystem.html#ac884397d65d5dc6820add75d394aa1c0">SetPivotSpeed</a> (double speed)</td></tr>
+<tr class="memdesc:ac884397d65d5dc6820add75d394aa1c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the speed of the coral arm's pivot motor.  <br /></td></tr>
 <tr class="separator:ac884397d65d5dc6820add75d394aa1c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9da8544f0e0387594121a8d293fb6138"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoralSubsystem.html#a9da8544f0e0387594121a8d293fb6138">CoralPresent</a> ()</td></tr>
+<tr class="memdesc:a9da8544f0e0387594121a8d293fb6138"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if a coral is collected and false otherwise.  <br /></td></tr>
 <tr class="separator:a9da8544f0e0387594121a8d293fb6138"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae296a90d3589d9743d9d9d3603dfa629"><td class="memItemLeft" align="right" valign="top">frc2::CommandPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoralSubsystem.html#ae296a90d3589d9743d9d9d3603dfa629">GoToAngle</a> (units::degree_t angle)</td></tr>
 <tr class="separator:ae296a90d3589d9743d9d9d3603dfa629"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afbf6a281352fba310f870f25c2e96188"><td class="memItemLeft" align="right" valign="top">frc2::CommandPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoralSubsystem.html#afbf6a281352fba310f870f25c2e96188">Collect</a> ()</td></tr>
+<tr class="memdesc:afbf6a281352fba310f870f25c2e96188"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts the intake motor to collect coral and stops it either when the coral has been collected.  <br /></td></tr>
 <tr class="separator:afbf6a281352fba310f870f25c2e96188"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34f7bbead6767d9e5d58f71174dec85f"><td class="memItemLeft" align="right" valign="top">frc2::CommandPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoralSubsystem.html#a34f7bbead6767d9e5d58f71174dec85f">Dispense</a> ()</td></tr>
+<tr class="memdesc:a34f7bbead6767d9e5d58f71174dec85f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts the intake motor to dispense coral and stops it after one second.  <br /></td></tr>
 <tr class="separator:a34f7bbead6767d9e5d58f71174dec85f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29a5057e47bb2562d9d33bbd8661cf45"><td class="memItemLeft" align="right" valign="top">frc2::CommandPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCoralSubsystem.html#a29a5057e47bb2562d9d33bbd8661cf45">StopIntake</a> ()</td></tr>
+<tr class="memdesc:a29a5057e47bb2562d9d33bbd8661cf45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops the coral intake motor.  <br /></td></tr>
 <tr class="separator:a29a5057e47bb2562d9d33bbd8661cf45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The subsystem controls the coral arm. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a9bea5b7eea60f447a99f2793eff125e0" name="a9bea5b7eea60f447a99f2793eff125e0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9bea5b7eea60f447a99f2793eff125e0">&#9670;&#160;</a></span>CoralSubsystem()</h2>
 
@@ -167,6 +178,8 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Starts the intake motor to collect coral and stops it either when the coral has been collected. </p>
+
 </div>
 </div>
 <a id="a9da8544f0e0387594121a8d293fb6138" name="a9da8544f0e0387594121a8d293fb6138"></a>
@@ -184,6 +197,8 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Returns true if a coral is collected and false otherwise. </p>
+
 </div>
 </div>
 <a id="a34f7bbead6767d9e5d58f71174dec85f" name="a34f7bbead6767d9e5d58f71174dec85f"></a>
@@ -200,6 +215,8 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Starts the intake motor to dispense coral and stops it after one second. </p>
 
 </div>
 </div>
@@ -269,6 +286,15 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Sets the speed of the coral arm. </p>
+<dl class="section attention"><dt>Attention</dt><dd>This function is <b>not</b> meant to be used for taking in and dispensing coral. <a class="el" href="classCoralSubsystem.html#afbf6a281352fba310f870f25c2e96188">CoralSubsystem::Collect</a> and <a class="el" href="classCoralSubsystem.html#a34f7bbead6767d9e5d58f71174dec85f">CoralSubsystem::Dispense</a> instead. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">speed</td><td>The speed should range from -1.0 to 1.0. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="ac884397d65d5dc6820add75d394aa1c0" name="ac884397d65d5dc6820add75d394aa1c0"></a>
@@ -287,6 +313,15 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Sets the speed of the coral arm's pivot motor. </p>
+<dl class="section attention"><dt>Attention</dt><dd>This function is <b>not</b> meant to be called, set the goal coral arm angle instead. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">speed</td><td>The speed should range from -1.0 to 1.0. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a29a5057e47bb2562d9d33bbd8661cf45" name="a29a5057e47bb2562d9d33bbd8661cf45"></a>
@@ -303,6 +338,8 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Stops the coral intake motor. </p>
 
 </div>
 </div>

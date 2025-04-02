@@ -104,6 +104,9 @@ $(document).ready(function(){initNavTree('classRobot.html',''); initResizable();
 </div><!--header-->
 <div class="contents">
 
+<p>Runs the robot code.  
+ <a href="classRobot.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="Robot_8h_source.html">Robot.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for Robot:</div>
@@ -146,9 +149,14 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:abaf181f44ce73073bf3e50c1703255f7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFeatherCanDecoder.html">FeatherCanDecoder</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRobot.html#abaf181f44ce73073bf3e50c1703255f7">m_featherCanDecoder</a></td></tr>
+<tr class="memdesc:abaf181f44ce73073bf3e50c1703255f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the device that decodes CAN messages to get various sensor values.  <br /></td></tr>
 <tr class="separator:abaf181f44ce73073bf3e50c1703255f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Runs the robot code. </p>
+<dl class="section attention"><dt>Attention</dt><dd>All of the subsystem declaration and trigger bindings should happen in <a class="el" href="classRobot.html" title="Runs the robot code.">Robot</a> Container. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="RobotContainer_8h.html">RobotContainer.h</a> </dd></dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a4fc7c70ae20623f05e06f2ecb388b6c4" name="a4fc7c70ae20623f05e06f2ecb388b6c4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4fc7c70ae20623f05e06f2ecb388b6c4">&#9670;&#160;</a></span>Robot()</h2>
 
@@ -504,6 +512,9 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Represents the device that decodes CAN messages to get various sensor values. </p>
+<dl class="section note"><dt>Note</dt><dd>This variable will be passed into various subsystems as a pointer. </dd></dl>
 
 </div>
 </div>

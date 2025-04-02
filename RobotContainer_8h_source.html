@@ -99,86 +99,90 @@ $(document).ready(function(){initNavTree('RobotContainer_8h_source.html',''); in
   <div class="headertitle"><div class="title">RobotContainer.h</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="RobotContainer_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright (c) FIRST and other WPILib contributors.</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// Open Source Software; you can modify and/or share it under the terms of</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// the WPILib BSD license file in the root directory of this project.</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;frc/smartdashboard/SendableChooser.h&gt;</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;frc2/command/CommandPtr.h&gt;</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;frc2/command/button/CommandXboxController.h&gt;</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;frc2/command/button/CommandGenericHID.h&gt;</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;<a class="code" href="FeatherCanDecoder_8h.html">io/FeatherCanDecoder.h</a>&quot;</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="CommandSwerveDrivetrain_8h.html">subsystems/CommandSwerveDrivetrain.h</a>&quot;</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;<a class="code" href="CameraSubsystem_8h.html">subsystems/CameraSubsystem.h</a>&quot;</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;<a class="code" href="ElevatorSubsystem_8h.html">subsystems/ElevatorSubsystem.h</a>&quot;</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;<a class="code" href="CoralSubsystem_8h.html">subsystems/CoralSubsystem.h</a>&quot;</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;<a class="code" href="Climber_8h.html">subsystems/Climber.h</a>&quot;</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &quot;<a class="code" href="ScoringSuperstructure_8h.html">subsystems/ScoringSuperstructure.h</a>&quot;</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &quot;<a class="code" href="LED_8h.html">subsystems/LED.h</a>&quot;</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &quot;<a class="code" href="Telemetry_8h.html">Telemetry.h</a>&quot;</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &lt;frc2/command/RunCommand.h&gt;</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &quot;<a class="code" href="AlgaeSubsystem_8h.html">subsystems/AlgaeSubsystem.h</a>&quot;</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &quot;<a class="code" href="AlignWithReef_8h.html">commands/AlignWithReef.h</a>&quot;</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="classRobotContainer.html">   24</a></span><span class="keyword">class </span><a class="code hl_class" href="classRobotContainer.html">RobotContainer</a> {</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    units::meters_per_second_t m_maxSpeed = <a class="code hl_variable" href="classTunerConstants.html#a725d38e45a1a9876bb245be614e81d80">TunerConstants::kSpeedAt12Volts</a>;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keywordtype">double</span> m_speedMultiplier = 1.0;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    units::radians_per_second_t m_maxAngularRate = 0.75_tps;</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="comment">/* Setting up bindings for necessary control of the swerve drive platform */</span></div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    swerve::requests::FieldCentric drive = swerve::requests::FieldCentric{}</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        .WithDeadband(m_maxSpeed * 0.1).WithRotationalDeadband(m_maxAngularRate * 0.1) <span class="comment">// Add a 10% deadband</span></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        .WithDriveRequestType(swerve::DriveRequestType::OpenLoopVoltage); <span class="comment">// Use open-loop control for drive motors</span></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    swerve::requests::SwerveDriveBrake brake{};</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    swerve::requests::PointWheelsAt point{};</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    swerve::requests::RobotCentric strafe = swerve::requests::RobotCentric{}</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        .WithDriveRequestType(swerve::DriveRequestType::OpenLoopVoltage)</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        .WithVelocityX(0_mps);</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="comment">/* Note: This must be constructed before the drivetrain, otherwise we need to</span></div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment">     *       define a destructor to un-register the telemetry from the drivetrain */</span></div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <a class="code hl_class" href="classTelemetry.html">Telemetry</a> logger{m_maxSpeed};</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    frc2::CommandXboxController m_driverJoystick{0};</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    frc2::CommandXboxController m_operatorJoystick{1};</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="comment">// frc2::CommandGenericHID m_gamepad{4};</span></div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="comment">// Robot.cpp owns the FeatherCanDecoder object</span></div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <a class="code hl_class" href="classFeatherCanDecoder.html">FeatherCanDecoder</a>* m_featherCanDecoder;</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <a class="code hl_class" href="classLED.html">LED</a> m_LED;</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <a class="code hl_class" href="classCameraSubsystem.html">CameraSubsystem</a> m_cameraSubsystem;</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <a class="code hl_class" href="classElevatorSubsystem.html">ElevatorSubsystem</a> m_elevatorSubsystem;</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <a class="code hl_class" href="classCoralSubsystem.html">CoralSubsystem</a> m_coralSubsystem;</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <a class="code hl_class" href="classAlgaeSubsystem.html">AlgaeSubsystem</a> m_algaeSubsystem;</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <a class="code hl_class" href="classClimber.html">Climber</a> m_climberSubsystem;</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <a class="code hl_class" href="classsubsystems_1_1ScoringSuperstructure.html">subsystems::ScoringSuperstructure</a> m_scoringSuperstructure;</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="classRobotContainer.html#aa713a3eddf18e12bcb29fa8d3f14bebb">   60</a></span>    <a class="code hl_class" href="classsubsystems_1_1CommandSwerveDrivetrain.html">subsystems::CommandSwerveDrivetrain</a> <a class="code hl_variable" href="classRobotContainer.html#aa713a3eddf18e12bcb29fa8d3f14bebb">m_drivetrain</a>{<a class="code hl_function" href="classTunerConstants.html#abbe59b658724f13d56a2a9f903d151be">TunerConstants::CreateDrivetrain</a>()};</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="comment">/* Path follower */</span></div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    frc::SendableChooser&lt;frc2::Command *&gt; m_autoChooser;</div>
+<a href="RobotContainer_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">// Copyright (c) FIRST and other WPILib contributors.</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">// Open Source Software; you can modify and/or share it under the terms of</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">// the WPILib BSD license file in the root directory of this project.</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;frc/smartdashboard/SendableChooser.h&gt;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;frc2/command/CommandPtr.h&gt;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &lt;frc2/command/button/CommandXboxController.h&gt;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &lt;frc2/command/button/CommandGenericHID.h&gt;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;<a class="code" href="FeatherCanDecoder_8h.html">io/FeatherCanDecoder.h</a>&quot;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;<a class="code" href="CommandSwerveDrivetrain_8h.html">subsystems/CommandSwerveDrivetrain.h</a>&quot;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &quot;<a class="code" href="CameraSubsystem_8h.html">subsystems/CameraSubsystem.h</a>&quot;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &quot;<a class="code" href="ElevatorSubsystem_8h.html">subsystems/ElevatorSubsystem.h</a>&quot;</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &quot;<a class="code" href="CoralSubsystem_8h.html">subsystems/CoralSubsystem.h</a>&quot;</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &quot;<a class="code" href="Climber_8h.html">subsystems/Climber.h</a>&quot;</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &quot;<a class="code" href="ScoringSuperstructure_8h.html">subsystems/ScoringSuperstructure.h</a>&quot;</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &quot;<a class="code" href="LED_8h.html">subsystems/LED.h</a>&quot;</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &quot;<a class="code" href="Telemetry_8h.html">Telemetry.h</a>&quot;</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#include &lt;frc2/command/RunCommand.h&gt;</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#include &quot;<a class="code" href="AlgaeSubsystem_8h.html">subsystems/AlgaeSubsystem.h</a>&quot;</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#include &quot;<a class="code" href="AlignWithReef_8h.html">commands/AlignWithReef.h</a>&quot;</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="classRobotContainer.html">   32</a></span><span class="keyword">class </span><a class="code hl_class" href="classRobotContainer.html">RobotContainer</a> {</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    units::meters_per_second_t m_maxSpeed = <a class="code hl_variable" href="classTunerConstants.html#a725d38e45a1a9876bb245be614e81d80">TunerConstants::kSpeedAt12Volts</a>;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keywordtype">double</span> m_speedMultiplier = 1.0;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    units::radians_per_second_t m_maxAngularRate = 0.75_tps;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    swerve::requests::FieldCentric drive = swerve::requests::FieldCentric{}</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        .WithDeadband(m_maxSpeed * 0.1).WithRotationalDeadband(m_maxAngularRate * 0.1)</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        .WithDriveRequestType(swerve::DriveRequestType::OpenLoopVoltage);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    swerve::requests::SwerveDriveBrake brake{};</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <a class="code hl_class" href="classRobotContainer.html">RobotContainer</a>(<a class="code hl_class" href="classFeatherCanDecoder.html">FeatherCanDecoder</a>* featherCanDecoder);</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    frc2::Command *<a class="code hl_function" href="classRobotContainer.html#a4ac35c4eade0422c19b5d1e037cc7647">GetAutonomousCommand</a>();</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    frc2::CommandPtr <a class="code hl_function" href="classRobotContainer.html#a77499620eb5b6eadcbe215f6f4c03797">AddControllerRumble</a>(frc::GenericHID::RumbleType rumbleType, <span class="keywordtype">double</span> rumble);</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classRobotContainer.html#ae26f32bc455024464602e4d44a62af6d">ResetRobotForAutonomous</a>();</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    frc2::CommandPtr <a class="code hl_function" href="classRobotContainer.html#ad2da3950d527e4b97aff946e8cddb8dd">ResetRobotForTeleOp</a>();</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="keywordtype">void</span> ConfigureBindings();</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="keywordtype">void</span> AddPathPlannerCommands();</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    </div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <a class="code hl_enumeration" href="AlignWithReef_8h.html#af0972e1166010355821378b4aad9550d">ReefSide</a> m_reefSide = ReefSide::Left;</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>};</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    swerve::requests::PointWheelsAt point{};</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    swerve::requests::RobotCentric strafe = swerve::requests::RobotCentric{}</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        .WithDriveRequestType(swerve::DriveRequestType::OpenLoopVoltage)</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        .WithVelocityX(0_mps);</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <a class="code hl_class" href="classTelemetry.html">Telemetry</a> logger{m_maxSpeed};</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    frc2::CommandXboxController m_driverJoystick{0};</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    frc2::CommandXboxController m_operatorJoystick{1};</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    <span class="comment">// frc2::CommandGenericHID m_gamepad{4};</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    <a class="code hl_class" href="classFeatherCanDecoder.html">FeatherCanDecoder</a>* m_featherCanDecoder;</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    <a class="code hl_class" href="classLED.html">LED</a> m_LED;</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    <a class="code hl_class" href="classCameraSubsystem.html">CameraSubsystem</a> m_cameraSubsystem;</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    <a class="code hl_class" href="classElevatorSubsystem.html">ElevatorSubsystem</a> m_elevatorSubsystem;</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    <a class="code hl_class" href="classCoralSubsystem.html">CoralSubsystem</a> m_coralSubsystem;</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    <a class="code hl_class" href="classAlgaeSubsystem.html">AlgaeSubsystem</a> m_algaeSubsystem;</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    <a class="code hl_class" href="classClimber.html">Climber</a> m_climberSubsystem;</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    <a class="code hl_class" href="classsubsystems_1_1ScoringSuperstructure.html">subsystems::ScoringSuperstructure</a> m_scoringSuperstructure;</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="classRobotContainer.html#aa713a3eddf18e12bcb29fa8d3f14bebb">  111</a></span>    <a class="code hl_class" href="classsubsystems_1_1CommandSwerveDrivetrain.html">subsystems::CommandSwerveDrivetrain</a> <a class="code hl_variable" href="classRobotContainer.html#aa713a3eddf18e12bcb29fa8d3f14bebb">m_drivetrain</a>{<a class="code hl_function" href="classTunerConstants.html#abbe59b658724f13d56a2a9f903d151be">TunerConstants::CreateDrivetrain</a>()};</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    <span class="comment">/* Path follower */</span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    frc::SendableChooser&lt;frc2::Command *&gt; m_autoChooser;</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    <a class="code hl_class" href="classRobotContainer.html">RobotContainer</a>(<a class="code hl_class" href="classFeatherCanDecoder.html">FeatherCanDecoder</a>* featherCanDecoder);</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    frc2::Command *<a class="code hl_function" href="classRobotContainer.html#a4ac35c4eade0422c19b5d1e037cc7647">GetAutonomousCommand</a>();</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    frc2::CommandPtr <a class="code hl_function" href="classRobotContainer.html#a77499620eb5b6eadcbe215f6f4c03797">AddControllerRumble</a>(frc::GenericHID::RumbleType rumbleType, <span class="keywordtype">double</span> rumble);</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classRobotContainer.html#ae26f32bc455024464602e4d44a62af6d">ResetRobotForAutonomous</a>();</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    frc2::CommandPtr <a class="code hl_function" href="classRobotContainer.html#ad2da3950d527e4b97aff946e8cddb8dd">ResetRobotForTeleOp</a>();</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    <span class="keywordtype">void</span> ConfigureBindings();</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    <span class="keywordtype">void</span> AddPathPlannerCommands();</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    </div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    <a class="code hl_enumeration" href="AlignWithReef_8h.html#af0972e1166010355821378b4aad9550d">ReefSide</a> m_reefSide = ReefSide::Left;</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>};</div>
 <div class="ttc" id="aAlgaeSubsystem_8h_html"><div class="ttname"><a href="AlgaeSubsystem_8h.html">AlgaeSubsystem.h</a></div></div>
 <div class="ttc" id="aAlignWithReef_8h_html"><div class="ttname"><a href="AlignWithReef_8h.html">AlignWithReef.h</a></div></div>
 <div class="ttc" id="aAlignWithReef_8h_html_af0972e1166010355821378b4aad9550d"><div class="ttname"><a href="AlignWithReef_8h.html#af0972e1166010355821378b4aad9550d">ReefSide</a></div><div class="ttdeci">ReefSide</div><div class="ttdoc">An enum representing the two sides of the reef, left or right.</div><div class="ttdef"><b>Definition:</b> AlignWithReef.h:27</div></div>
@@ -193,22 +197,22 @@ $(document).ready(function(){initNavTree('RobotContainer_8h_source.html',''); in
 <div class="ttc" id="aTelemetry_8h_html"><div class="ttname"><a href="Telemetry_8h.html">Telemetry.h</a></div></div>
 <div class="ttc" id="aclassAlgaeSubsystem_html"><div class="ttname"><a href="classAlgaeSubsystem.html">AlgaeSubsystem</a></div><div class="ttdoc">This subsystem deals with removing algae from the reef.</div><div class="ttdef"><b>Definition:</b> AlgaeSubsystem.h:37</div></div>
 <div class="ttc" id="aclassCameraSubsystem_html"><div class="ttname"><a href="classCameraSubsystem.html">CameraSubsystem</a></div><div class="ttdoc">This subsystem uses PhotonVision and a Limelight 3 to recognize AprilTags.</div><div class="ttdef"><b>Definition:</b> CameraSubsystem.h:22</div></div>
-<div class="ttc" id="aclassClimber_html"><div class="ttname"><a href="classClimber.html">Climber</a></div><div class="ttdef"><b>Definition:</b> Climber.h:28</div></div>
-<div class="ttc" id="aclassCoralSubsystem_html"><div class="ttname"><a href="classCoralSubsystem.html">CoralSubsystem</a></div><div class="ttdef"><b>Definition:</b> CoralSubsystem.h:18</div></div>
-<div class="ttc" id="aclassElevatorSubsystem_html"><div class="ttname"><a href="classElevatorSubsystem.html">ElevatorSubsystem</a></div><div class="ttdef"><b>Definition:</b> ElevatorSubsystem.h:37</div></div>
+<div class="ttc" id="aclassClimber_html"><div class="ttname"><a href="classClimber.html">Climber</a></div><div class="ttdoc">This subsystem controls the climber mechanism.</div><div class="ttdef"><b>Definition:</b> Climber.h:49</div></div>
+<div class="ttc" id="aclassCoralSubsystem_html"><div class="ttname"><a href="classCoralSubsystem.html">CoralSubsystem</a></div><div class="ttdoc">The subsystem controls the coral arm.</div><div class="ttdef"><b>Definition:</b> CoralSubsystem.h:39</div></div>
+<div class="ttc" id="aclassElevatorSubsystem_html"><div class="ttname"><a href="classElevatorSubsystem.html">ElevatorSubsystem</a></div><div class="ttdoc">Represents the subsystem that controls the elevator.</div><div class="ttdef"><b>Definition:</b> ElevatorSubsystem.h:66</div></div>
 <div class="ttc" id="aclassFeatherCanDecoder_html"><div class="ttname"><a href="classFeatherCanDecoder.html">FeatherCanDecoder</a></div><div class="ttdoc">This class is used for parsing sensor values.</div><div class="ttdef"><b>Definition:</b> FeatherCanDecoder.h:26</div></div>
-<div class="ttc" id="aclassLED_html"><div class="ttname"><a href="classLED.html">LED</a></div><div class="ttdef"><b>Definition:</b> LED.h:34</div></div>
-<div class="ttc" id="aclassRobotContainer_html"><div class="ttname"><a href="classRobotContainer.html">RobotContainer</a></div><div class="ttdef"><b>Definition:</b> RobotContainer.h:24</div></div>
+<div class="ttc" id="aclassLED_html"><div class="ttname"><a href="classLED.html">LED</a></div><div class="ttdoc">This class controls LED lights for different situations. See ArduinoConstants::RIO_MESSAGES for these...</div><div class="ttdef"><b>Definition:</b> LED.h:40</div></div>
+<div class="ttc" id="aclassRobotContainer_html"><div class="ttname"><a href="classRobotContainer.html">RobotContainer</a></div><div class="ttdoc">This class is where all of the subsystems are included and commands are binded to triggers.</div><div class="ttdef"><b>Definition:</b> RobotContainer.h:32</div></div>
 <div class="ttc" id="aclassRobotContainer_html_a4ac35c4eade0422c19b5d1e037cc7647"><div class="ttname"><a href="classRobotContainer.html#a4ac35c4eade0422c19b5d1e037cc7647">RobotContainer::GetAutonomousCommand</a></div><div class="ttdeci">frc2::Command * GetAutonomousCommand()</div><div class="ttdef"><b>Definition:</b> RobotContainer.cpp:279</div></div>
-<div class="ttc" id="aclassRobotContainer_html_a77499620eb5b6eadcbe215f6f4c03797"><div class="ttname"><a href="classRobotContainer.html#a77499620eb5b6eadcbe215f6f4c03797">RobotContainer::AddControllerRumble</a></div><div class="ttdeci">frc2::CommandPtr AddControllerRumble(frc::GenericHID::RumbleType rumbleType, double rumble)</div><div class="ttdef"><b>Definition:</b> RobotContainer.cpp:38</div></div>
-<div class="ttc" id="aclassRobotContainer_html_aa713a3eddf18e12bcb29fa8d3f14bebb"><div class="ttname"><a href="classRobotContainer.html#aa713a3eddf18e12bcb29fa8d3f14bebb">RobotContainer::m_drivetrain</a></div><div class="ttdeci">subsystems::CommandSwerveDrivetrain m_drivetrain</div><div class="ttdef"><b>Definition:</b> RobotContainer.h:60</div></div>
+<div class="ttc" id="aclassRobotContainer_html_a77499620eb5b6eadcbe215f6f4c03797"><div class="ttname"><a href="classRobotContainer.html#a77499620eb5b6eadcbe215f6f4c03797">RobotContainer::AddControllerRumble</a></div><div class="ttdeci">frc2::CommandPtr AddControllerRumble(frc::GenericHID::RumbleType rumbleType, double rumble)</div><div class="ttdoc">This function adds controller rumble to the driver controller.</div><div class="ttdef"><b>Definition:</b> RobotContainer.cpp:38</div></div>
+<div class="ttc" id="aclassRobotContainer_html_aa713a3eddf18e12bcb29fa8d3f14bebb"><div class="ttname"><a href="classRobotContainer.html#aa713a3eddf18e12bcb29fa8d3f14bebb">RobotContainer::m_drivetrain</a></div><div class="ttdeci">subsystems::CommandSwerveDrivetrain m_drivetrain</div><div class="ttdef"><b>Definition:</b> RobotContainer.h:111</div></div>
 <div class="ttc" id="aclassRobotContainer_html_ad2da3950d527e4b97aff946e8cddb8dd"><div class="ttname"><a href="classRobotContainer.html#ad2da3950d527e4b97aff946e8cddb8dd">RobotContainer::ResetRobotForTeleOp</a></div><div class="ttdeci">frc2::CommandPtr ResetRobotForTeleOp()</div><div class="ttdef"><b>Definition:</b> RobotContainer.cpp:269</div></div>
-<div class="ttc" id="aclassRobotContainer_html_ae26f32bc455024464602e4d44a62af6d"><div class="ttname"><a href="classRobotContainer.html#ae26f32bc455024464602e4d44a62af6d">RobotContainer::ResetRobotForAutonomous</a></div><div class="ttdeci">void ResetRobotForAutonomous()</div><div class="ttdef"><b>Definition:</b> RobotContainer.cpp:273</div></div>
-<div class="ttc" id="aclassTelemetry_html"><div class="ttname"><a href="classTelemetry.html">Telemetry</a></div><div class="ttdef"><b>Definition:</b> Telemetry.h:15</div></div>
-<div class="ttc" id="aclassTunerConstants_html_a725d38e45a1a9876bb245be614e81d80"><div class="ttname"><a href="classTunerConstants.html#a725d38e45a1a9876bb245be614e81d80">TunerConstants::kSpeedAt12Volts</a></div><div class="ttdeci">static constexpr units::meters_per_second_t kSpeedAt12Volts</div><div class="ttdef"><b>Definition:</b> TunerConstants.h:73</div></div>
-<div class="ttc" id="aclassTunerConstants_html_abbe59b658724f13d56a2a9f903d151be"><div class="ttname"><a href="classTunerConstants.html#abbe59b658724f13d56a2a9f903d151be">TunerConstants::CreateDrivetrain</a></div><div class="ttdeci">static subsystems::CommandSwerveDrivetrain CreateDrivetrain()</div><div class="ttdef"><b>Definition:</b> TunerConstants.cpp:4</div></div>
-<div class="ttc" id="aclasssubsystems_1_1CommandSwerveDrivetrain_html"><div class="ttname"><a href="classsubsystems_1_1CommandSwerveDrivetrain.html">subsystems::CommandSwerveDrivetrain</a></div><div class="ttdoc">Class that extends the Phoenix 6 SwerveDrivetrain class and implements Subsystem so it can easily be ...</div><div class="ttdef"><b>Definition:</b> CommandSwerveDrivetrain.h:21</div></div>
-<div class="ttc" id="aclasssubsystems_1_1ScoringSuperstructure_html"><div class="ttname"><a href="classsubsystems_1_1ScoringSuperstructure.html">subsystems::ScoringSuperstructure</a></div><div class="ttdef"><b>Definition:</b> ScoringSuperstructure.h:15</div></div>
+<div class="ttc" id="aclassRobotContainer_html_ae26f32bc455024464602e4d44a62af6d"><div class="ttname"><a href="classRobotContainer.html#ae26f32bc455024464602e4d44a62af6d">RobotContainer::ResetRobotForAutonomous</a></div><div class="ttdeci">void ResetRobotForAutonomous()</div><div class="ttdoc">This function will point the swerves straight to speed up autos.</div><div class="ttdef"><b>Definition:</b> RobotContainer.cpp:273</div></div>
+<div class="ttc" id="aclassTelemetry_html"><div class="ttname"><a href="classTelemetry.html">Telemetry</a></div><div class="ttdoc">This class updates the swerves' telemetry for use in simulations.</div><div class="ttdef"><b>Definition:</b> Telemetry.h:22</div></div>
+<div class="ttc" id="aclassTunerConstants_html_a725d38e45a1a9876bb245be614e81d80"><div class="ttname"><a href="classTunerConstants.html#a725d38e45a1a9876bb245be614e81d80">TunerConstants::kSpeedAt12Volts</a></div><div class="ttdeci">static constexpr units::meters_per_second_t kSpeedAt12Volts</div><div class="ttdoc">Theoretical free speed (m/s) at 12 V applied output; This needs to be tuned to your individual robot.</div><div class="ttdef"><b>Definition:</b> TunerConstants.h:109</div></div>
+<div class="ttc" id="aclassTunerConstants_html_abbe59b658724f13d56a2a9f903d151be"><div class="ttname"><a href="classTunerConstants.html#abbe59b658724f13d56a2a9f903d151be">TunerConstants::CreateDrivetrain</a></div><div class="ttdeci">static subsystems::CommandSwerveDrivetrain CreateDrivetrain()</div><div class="ttdoc">Creates a CommandSwerveDrivetrain instance.</div><div class="ttdef"><b>Definition:</b> TunerConstants.cpp:4</div></div>
+<div class="ttc" id="aclasssubsystems_1_1CommandSwerveDrivetrain_html"><div class="ttname"><a href="classsubsystems_1_1CommandSwerveDrivetrain.html">subsystems::CommandSwerveDrivetrain</a></div><div class="ttdoc">Class that extends the Phoenix 6 SwerveDrivetrain class and implements Subsystem so it can easily be ...</div><div class="ttdef"><b>Definition:</b> CommandSwerveDrivetrain.h:25</div></div>
+<div class="ttc" id="aclasssubsystems_1_1ScoringSuperstructure_html"><div class="ttname"><a href="classsubsystems_1_1ScoringSuperstructure.html">subsystems::ScoringSuperstructure</a></div><div class="ttdoc">This subsystem aggregates multiple subsystems to easily create command compositions that perform robo...</div><div class="ttdef"><b>Definition:</b> ScoringSuperstructure.h:28</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

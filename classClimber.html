@@ -104,6 +104,9 @@ $(document).ready(function(){initNavTree('classClimber.html',''); initResizable(
 </div><!--header-->
 <div class="contents">
 
+<p>This subsystem controls the climber mechanism.  
+ <a href="classClimber.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="Climber_8h_source.html">Climber.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for Climber:</div>
@@ -119,24 +122,32 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a215428e022a8e3608b524961c63b3a7e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classClimber.html#a215428e022a8e3608b524961c63b3a7e">Periodic</a> () override</td></tr>
 <tr class="separator:a215428e022a8e3608b524961c63b3a7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a251e157b9e52bd0ac022bcf986e9a2f7"><td class="memItemLeft" align="right" valign="top">frc2::CommandPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classClimber.html#a251e157b9e52bd0ac022bcf986e9a2f7">Climb</a> ()</td></tr>
+<tr class="memdesc:a251e157b9e52bd0ac022bcf986e9a2f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves the climber to <a class="el" href="Climber_8h.html#aa3ed98a0a57252b03079864e2eb0e7f9">kClimberEndAngle</a>.  <br /></td></tr>
 <tr class="separator:a251e157b9e52bd0ac022bcf986e9a2f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9919ef03c9863500b145b451c6df427a"><td class="memItemLeft" align="right" valign="top">frc2::CommandPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classClimber.html#a9919ef03c9863500b145b451c6df427a">Extend</a> ()</td></tr>
+<tr class="memdesc:a9919ef03c9863500b145b451c6df427a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves the climber to <a class="el" href="Climber_8h.html#ae0ef0bf986e7633dc121670a76a4b5a9">kClimberStartAngle</a>.  <br /></td></tr>
 <tr class="separator:a9919ef03c9863500b145b451c6df427a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9521b0dea6f7131451e1e74708fe50ef"><td class="memItemLeft" align="right" valign="top">frc2::CommandPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classClimber.html#a9521b0dea6f7131451e1e74708fe50ef">Stow</a> ()</td></tr>
+<tr class="memdesc:a9521b0dea6f7131451e1e74708fe50ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves the climber to <a class="el" href="Climber_8h.html#aac718b8f583b0a7cefe81a15e2fb8e3b">kClimberStowAngle</a>.  <br /></td></tr>
 <tr class="separator:a9521b0dea6f7131451e1e74708fe50ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba973665d73aacc39cc233997d4972aa"><td class="memItemLeft" align="right" valign="top">units::degree_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classClimber.html#aba973665d73aacc39cc233997d4972aa">CurrentAngle</a> ()</td></tr>
 <tr class="separator:aba973665d73aacc39cc233997d4972aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d0062fbf477c37262309d086c14efb2"><td class="memItemLeft" align="right" valign="top">frc2::CommandPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classClimber.html#a1d0062fbf477c37262309d086c14efb2">StopClimber</a> ()</td></tr>
+<tr class="memdesc:a1d0062fbf477c37262309d086c14efb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops the climber motor.  <br /></td></tr>
 <tr class="separator:a1d0062fbf477c37262309d086c14efb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a3db33289c1bc44362c9dec3850640748"><td class="memItemLeft" align="right" valign="top">frc2::Trigger&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classClimber.html#a3db33289c1bc44362c9dec3850640748">IsLeftCageHooked</a></td></tr>
+<tr class="memdesc:a3db33289c1bc44362c9dec3850640748"><td class="mdescLeft">&#160;</td><td class="mdescRight">Triggers when the proximity sensor detects the left side of the climber.  <br /></td></tr>
 <tr class="separator:a3db33289c1bc44362c9dec3850640748"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca0889e3c85950a2cd8d5fbb66e633ea"><td class="memItemLeft" align="right" valign="top">frc2::Trigger&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classClimber.html#aca0889e3c85950a2cd8d5fbb66e633ea">IsRightCageHooked</a></td></tr>
+<tr class="memdesc:aca0889e3c85950a2cd8d5fbb66e633ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Triggers when the proximity sensor detects the right side of the climber.  <br /></td></tr>
 <tr class="separator:aca0889e3c85950a2cd8d5fbb66e633ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This subsystem controls the climber mechanism. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a751e3e48e590efe8bd70a704f94a204f" name="a751e3e48e590efe8bd70a704f94a204f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a751e3e48e590efe8bd70a704f94a204f">&#9670;&#160;</a></span>Climber()</h2>
 
@@ -171,6 +182,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Moves the climber to <a class="el" href="Climber_8h.html#aa3ed98a0a57252b03079864e2eb0e7f9">kClimberEndAngle</a>. </p>
+
 </div>
 </div>
 <a id="aba973665d73aacc39cc233997d4972aa" name="aba973665d73aacc39cc233997d4972aa"></a>
@@ -204,6 +217,8 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Moves the climber to <a class="el" href="Climber_8h.html#ae0ef0bf986e7633dc121670a76a4b5a9">kClimberStartAngle</a>. </p>
 <p>Prepare the climber by extending it to the Ready To Climb position </p>
 
 </div>
@@ -248,6 +263,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Stops the climber motor. </p>
+
 </div>
 </div>
 <a id="a9521b0dea6f7131451e1e74708fe50ef" name="a9521b0dea6f7131451e1e74708fe50ef"></a>
@@ -264,6 +281,8 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Moves the climber to <a class="el" href="Climber_8h.html#aac718b8f583b0a7cefe81a15e2fb8e3b">kClimberStowAngle</a>. </p>
 
 </div>
 </div>
@@ -284,6 +303,8 @@ Public Attributes</h2></td></tr>
 <div class="line">    })</div>
 <div class="ttc" id="aclassIClimberDataProvider_html_a4966d9a16543f5a4411c3d8719039ad8"><div class="ttname"><a href="classIClimberDataProvider.html#a4966d9a16543f5a4411c3d8719039ad8">IClimberDataProvider::IsLeftCageHooked</a></div><div class="ttdeci">virtual bool IsLeftCageHooked()=0</div><div class="ttdoc">Return a simple boolean to indicate whether the left part of climber has collected the cage.</div></div>
 </div><!-- fragment -->
+<p>Triggers when the proximity sensor detects the left side of the climber. </p>
+
 </div>
 </div>
 <a id="aca0889e3c85950a2cd8d5fbb66e633ea" name="aca0889e3c85950a2cd8d5fbb66e633ea"></a>
@@ -302,6 +323,8 @@ Public Attributes</h2></td></tr>
 <div class="line">    })</div>
 <div class="ttc" id="aclassIClimberDataProvider_html_ac2245439b920e4126e66508d3ff95ded"><div class="ttname"><a href="classIClimberDataProvider.html#ac2245439b920e4126e66508d3ff95ded">IClimberDataProvider::IsRightCageHooked</a></div><div class="ttdeci">virtual bool IsRightCageHooked()=0</div><div class="ttdoc">Return a simple boolean to indicate whether the right part of climber has collected the cage.</div></div>
 </div><!-- fragment -->
+<p>Triggers when the proximity sensor detects the right side of the climber. </p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
