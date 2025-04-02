@@ -128,20 +128,17 @@ $(document).ready(function(){initNavTree('DriveBackAfterScore_8h_source.html',''
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">double</span> kD = 0.0;</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> units::meters_per_second_t kMaxVelocity = 1.0_mps;</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="comment">// Apply a slight shift to the left while driving back to pull out an algae</span></div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> units::degrees_per_second_t kLeftRotate = 3_deg_per_s;</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    swerve::requests::RobotCentric robotOriented = swerve::requests::RobotCentric{}</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        .WithDriveRequestType(swerve::DriveRequestType::OpenLoopVoltage)</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        .WithVelocityY(0_mps)</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        .WithRotationalRate(kLeftRotate);</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    frc::PIDController m_XAlignmentPID {kP, kI, kD};</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keyword">const</span> units::inch_t kTolerance = 1_in;</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    units::inch_t m_backwardDistance;</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    frc::Pose2d m_initialPose;</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>};</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    swerve::requests::RobotCentric robotOriented = swerve::requests::RobotCentric{}</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        .WithDriveRequestType(swerve::DriveRequestType::OpenLoopVoltage)</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        .WithVelocityY(0_mps)</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        .WithRotationalRate(0_deg_per_s);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    frc::PIDController m_XAlignmentPID {kP, kI, kD};</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keyword">const</span> units::inch_t kTolerance = 1_in;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    units::inch_t m_backwardDistance;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    frc::Pose2d m_initialPose;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>};</div>
 <div class="ttc" id="aCommandSwerveDrivetrain_8h_html"><div class="ttname"><a href="CommandSwerveDrivetrain_8h.html">CommandSwerveDrivetrain.h</a></div></div>
 <div class="ttc" id="aclassDriveBackAfterScore_html"><div class="ttname"><a href="classDriveBackAfterScore.html">DriveBackAfterScore</a></div><div class="ttdoc">This class moves the robot back after scoring a coral.</div><div class="ttdef"><b>Definition:</b> DriveBackAfterScore.h:18</div></div>
 <div class="ttc" id="aclassDriveBackAfterScore_html_a0bf1da0d13495226a0196d280e458c3d"><div class="ttname"><a href="classDriveBackAfterScore.html#a0bf1da0d13495226a0196d280e458c3d">DriveBackAfterScore::GetDistance</a></div><div class="ttdeci">units::inch_t GetDistance(frc::Pose2d first, frc::Pose2d second)</div><div class="ttdoc">This helper function is intended to calculate the current distance traveled.</div><div class="ttdef"><b>Definition:</b> DriveBackAfterScore.cpp:38</div></div>
